@@ -52,6 +52,8 @@ Se generan:
 - `reportes/ofertas-hoy.json` — para Excel u otras herramientas
 - `reportes/ofertas-AAAA-MM-DD.csv` — planilla del día
 
+La primera corrida tarda unos minutos: ChileCompra a veces responde lento o con timeout; el programa reintenta y sigue con el resto.
+
 Solo grano, sin coffee break:
 
 ```bash

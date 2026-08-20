@@ -23,9 +23,9 @@ class HttpClient:
         self,
         ticket: str,
         *,
-        timeout: int = 45,
-        min_interval: float = 0.45,
-        max_retries: int = 5,
+        timeout: int = 22,
+        min_interval: float = 0.35,
+        max_retries: int = 3,
         user_agent: str = "crl-coffee-ofertas/1.0",
     ) -> None:
         self.ticket = ticket.strip()
@@ -78,7 +78,7 @@ class HttpClient:
             except urllib.error.HTTPError as exc:
                 body = exc.read().decode("utf-8", errors="replace")
                 self._last_call = time.monotonic()
-                if exc.code in {429, 500, 502, 503, 504} and attempt < self.max_retries - 1:
+                if exc.code in {429, 500, 502, 503} and attempt < self.max_retries - 1:
                     wait = min(20.0, (2 ** attempt) + random.random())
                     time.sleep(wait)
                     last_error = MercadoPublicoError(

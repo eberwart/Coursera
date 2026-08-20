@@ -5,6 +5,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from dataclasses import asdict, dataclass, field
+from datetime import date, datetime
 from typing import Any, Iterable
 
 from crl_ofertas.api import PORTAL_COMPRA_AGIL, PORTAL_LICITACION
@@ -17,15 +18,9 @@ UNSPSC_SERVICIO_CAFE = {"90101603", "90101701", "90111603", "90101500"}
 BUSQUEDAS_COMPRA_AGIL = (
     "café",
     "cafe",
-    "coffee",
     "coffe",
     "cafetería",
     "cafeteria",
-    "grano",
-    "tostado",
-    "arábica",
-    "arabica",
-    "nescafé",
     "nescafe",
 )
 
@@ -297,6 +292,24 @@ def filtrar_resumenes_licitacion(rows: Iterable[dict[str, Any]]) -> list[dict[st
             continue
         utiles.append(row)
     return utiles
+
+
+def parse_cierre(value: str | None) -> datetime | None:
+    text = (value or "").strip()
+    if not text:
+        return None
+    text = text.replace("Z", "")
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def sigue_vigente(oferta: Oferta, hoy: date) -> bool:
+    cierre = parse_cierre(oferta.fecha_cierre)
+    if cierre is None:
+        return True
+    return cierre.date() >= hoy
 
 
 def ordenar(ofertas: Iterable[Oferta]) -> list[Oferta]:

@@ -139,6 +139,16 @@ class PuntajeTests(unittest.TestCase):
         filtradas = filtrar_resumenes_licitacion(rows)
         self.assertEqual([r["CodigoExterno"] for r in filtradas], ["a"])
 
+    def test_descarta_cierres_viejos(self) -> None:
+        from datetime import date
+
+        from crl_ofertas.matching import Oferta, sigue_vigente
+
+        vieja = Oferta(fuente="compra_agil", codigo="x", nombre="Café", estado="Publicada", fecha_cierre="2026-04-23 12:01")
+        vigente = Oferta(fuente="compra_agil", codigo="y", nombre="Café", estado="Publicada", fecha_cierre="2026-08-21 10:00")
+        self.assertFalse(sigue_vigente(vieja, date(2026, 8, 20)))
+        self.assertTrue(sigue_vigente(vigente, date(2026, 8, 20)))
+
 
 if __name__ == "__main__":
     unittest.main()

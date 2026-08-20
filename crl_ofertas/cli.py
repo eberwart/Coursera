@@ -68,7 +68,7 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         api = MercadoPublicoAPI(ticket)
-        ofertas = recolectar(api, solo_productos=args.solo_productos, log=print)
+        ofertas = recolectar(api, solo_productos=args.solo_productos, log=lambda msg: print(msg, flush=True))
     except MercadoPublicoError as exc:
         print(str(exc), file=sys.stderr)
         return 1

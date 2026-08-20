@@ -62,7 +62,7 @@ class MercadoPublicoAPI:
         query: str,
         estado: str = "publicada",
         page_size: int = 50,
-        max_pages: int = 8,
+        max_pages: int = 4,
     ) -> list[dict[str, Any]]:
         items: list[dict[str, Any]] = []
         for page in range(1, max_pages + 1):
