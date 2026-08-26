@@ -1,6 +1,16 @@
+<div align="center">
+
+<img src="logo-coffee-roasting-labs.png" alt="Coffee Roasting Labs" width="220" />
+
+**TOSTADURÍA ERIK BERWART ARAYA EIRL**  
+Nombre de fantasía: **Coffee Roasting Labs**  
+RUT: **77.586.349-8** · Fono / WhatsApp: **+56 9 2372 1634**
+
+</div>
+
 # CARTA PROPUESTA COMERCIAL
 
-**Arriendo de equipo espresso profesional + asesoría + insumos**
+**Arriendo de equipo espresso profesional + asesoría + gestión de insumos de barra**
 
 ---
 
@@ -8,7 +18,7 @@ Santiago, 26 de agosto de 2026
 
 **Estimados(as):**
 
-Por medio de la presente, tenemos el agrado de presentar nuestra **propuesta comercial** para el arriendo de una barra espresso profesional Nuova Simonelli, acompañada de asesoría técnica-operativa y la comercialización de insumos seleccionados bajo modalidad de distribuidor.
+Por medio de la presente, **Tostaduría Erik Berwart Araya EIRL** (nombre de fantasía **Coffee Roasting Labs**) tiene el agrado de presentar su **propuesta comercial** para el arriendo de una barra espresso profesional Nuova Simonelli, acompañada de asesoría técnica-operativa y de la **gestión de insumos de barra** que el Cliente deberá adquirir para operar correctamente el equipo (entre ellos, tamper y Cafiza).
 
 La presente oferta se estructura en cuatro secciones: (1) paquete de equipos, (2) referencias de mercado en Chile, (3) condiciones comerciales de esta propuesta, y (4) comparativo y alcance del servicio.
 
@@ -50,7 +60,7 @@ Para contextualizar esta oferta, se consideran rangos publicados por empresas qu
 
 **Café en grano (referencia mayorista / plan):** selección ≈ $14.000–$28.000 / kg; especialidad ≈ $28.000–$45.000 / kg.
 
-Respecto de esos rangos, la presente propuesta ofrece un **arriendo de equipo significativamente más competitivo**, complementado con **asesoría** y la compra de **insumos de barra** al Proponente en calidad de distribuidor.
+Respecto de esos rangos, la presente propuesta ofrece un **arriendo de equipo significativamente más competitivo**, complementado con **asesoría** y con la **gestión de insumos de barra** que el Cliente debe comprar para operar el set.
 
 ---
 
@@ -60,15 +70,17 @@ Respecto de esos rangos, la presente propuesta ofrece un **arriendo de equipo si
 
 | Condición | Detalle |
 |-----------|---------|
+| Arrendador | **Tostaduría Erik Berwart Araya EIRL** — Coffee Roasting Labs · RUT **77.586.349-8** |
 | Modalidad | **Arriendo** de Appia Life 1 grupo + molino MDX/MDXS |
 | Cuota mensual | **$150.000** (ciento cincuenta mil pesos chilenos) **+ IVA** |
 | Inicio de cobro | **A contar del 1 de enero de 2027** (año próximo) |
 | Duración del contrato | **12 meses** (un año), contados desde la fecha de inicio de cobro |
 | Renovación | De común acuerdo, por escrito, antes del vencimiento |
+| Contacto | **+56 9 2372 1634** |
 
 ### 3.2 Asesoría incluida
 
-Durante la vigencia del contrato, el Proponente entregará **asesoría** orientada a la correcta operación de la barra, que podrá incluir, según necesidad del Cliente:
+Durante la vigencia del contrato, Coffee Roasting Labs entregará **asesoría** orientada a la correcta operación de la barra, que podrá incluir, según necesidad del Cliente:
 
 - Puesta en marcha e instalación inicial (sujeta a cobertura geográfica acordada)
 - Capacitación básica de uso de máquina y molino
@@ -78,21 +90,22 @@ Durante la vigencia del contrato, el Proponente entregará **asesoría** orienta
 
 La asesoría no reemplaza el servicio técnico correctivo mayor ni el reemplazo de piezas por mal uso, los que se cotizarán por separado cuando corresponda.
 
-### 3.3 Insumos obligatorios — modalidad distribuidor
+### 3.3 Insumos de barra — a cargo del Cliente, con gestión de Coffee Roasting Labs
 
-Como parte de esta propuesta, el Cliente se compromete a **adquirir al Proponente**, en su calidad de **distribuidor**, al menos los siguientes insumos de barra (y otros que se acuerden por escrito):
+Para operar y mantener el equipo en condiciones adecuadas, el Cliente deberá **adquirir por su cuenta** (es decir, **comprarlos ellos**) al menos los siguientes insumos de barra:
 
 | Insumo | Descripción / uso |
 |--------|-------------------|
 | **Tamper** | Herramienta de prensado profesional compatible con el portafiltro del equipo |
 | **Cafiza** (o equivalente Urnex Cafiza) | Detergente profesional para backflush y limpieza de grupo |
-| Otros insumos de barra | Según catálogo del Proponente (ej.: detergente de leche, cepillos, jarras, filtros, etc.), cuando el Cliente los requiera |
+| Otros insumos de barra | Según necesidad operativa (ej.: detergente de leche, cepillos, jarras, filtros, etc.) |
 
-**Condiciones de compra de insumos:**
-- La compra se realiza al Proponente como distribuidor, a precios de lista vigentes al momento del pedido.
+**Gestión por parte de Coffee Roasting Labs:**
+- Aunque la **compra y el pago** de estos insumos son de cargo del Cliente, Coffee Roasting Labs **puede gestionar** su cotización, pedido, reposición y/o entrega, facilitando el abastecimiento.
+- La gestión no implica que el Proponente asuma el costo de los insumos, salvo acuerdo escrito en contrario.
 - El Cliente mantendrá stock mínimo razonable de Cafiza y elementos de higiene de barra para el uso correcto del equipo arrendado.
-- Los insumos se facturan aparte de la cuota de arriendo.
-- El detalle de precios unitarios, formatos y frecuencia de reposición se anexará en la cotización de insumos o en el pedido inicial.
+- Cualquier costo de insumos gestionados se traspasará al Cliente (precio de proveedor + eventuales gastos de gestión/flete previamente informados).
+- La cuota de arriendo de **$150.000 + IVA** **no incluye** el valor de tamper, Cafiza ni demás insumos.
 
 ### 3.4 Qué incluye / qué no incluye la cuota de $150.000
 
@@ -100,8 +113,10 @@ Como parte de esta propuesta, el Cliente se compromete a **adquirir al Proponent
 - Uso del set Appia Life 1 grupo + MDX/MDXS durante el plazo contractual
 - Asesoría según numeral 3.2
 - Coordinación de instalación inicial (dentro del perímetro acordado)
+- Gestión/orientación para la compra de insumos de barra (tamper, Cafiza y afines), sin asumir su costo
 
 **No incluye (salvo acuerdo escrito en contrario):**
+- Valor de tamper, Cafiza u otros insumos de barra (de cargo del Cliente)
 - Café en grano u otros productos de consumo alimentario (salvo que se contraten aparte)
 - Ablandador de agua, filtros de agua, instalación hidráulica especial o obras en local
 - Repuestos por mal uso, golpes, cal o falta de limpieza
@@ -123,8 +138,8 @@ El retiro del equipo se coordinará dentro de un plazo razonable una vez pagadas
 
 ### 3.6 Otras condiciones
 
-- Facturación mensual de la cuota de arriendo, según calendario que se indique en el contrato.
-- El equipo permanece de propiedad del Proponente durante toda la vigencia.
+- Facturación mensual de la cuota de arriendo, a nombre de **Tostaduría Erik Berwart Araya EIRL**, RUT **77.586.349-8**, según calendario que se indique en el contrato.
+- El equipo permanece de propiedad del Arrendador durante toda la vigencia.
 - El Cliente no podrá subarrendar, ceder ni trasladar el equipo sin autorización escrita.
 - Al término (ordinario o anticipado regularizado), el Cliente restituirá máquina, molino y accesorios entregados en inventario de recepción.
 
@@ -134,19 +149,19 @@ El retiro del equipo se coordinará dentro de un plazo razonable una vez pagadas
 
 ### 4.1 Posicionamiento frente al mercado
 
-| Concepto | Mercado referencial (Chile) | Esta propuesta |
-|----------|-----------------------------|----------------|
+| Concepto | Mercado referencial (Chile) | Esta propuesta — Coffee Roasting Labs |
+|----------|-----------------------------|----------------------------------------|
 | Arriendo / pack espresso profesional | ≈ $280.000 – $600.000 / mes, o comodatos desde ≈ $400.000 / mes en insumos | **$150.000 / mes** desde ene-2027 |
 | Plazo típico | 12 a 36 meses | **12 meses** |
 | Salida anticipada | Suele ser % de cuotas restantes o cláusulas equivalentes | **Penalización fija: 3 cuotas ($450.000 + IVA)** |
-| Diferencial | Solo equipo o solo consumo de café | **Equipo + asesoría + compra de insumos clave (tamper, Cafiza, etc.) como distribuidor** |
+| Diferencial | Solo equipo o solo consumo de café | **Equipo + asesoría + gestión de insumos de barra (tamper, Cafiza, etc.), de cargo del Cliente** |
 
 ### 4.2 Resumen económico para el Cliente (año contractual)
 
 | Concepto | Monto |
 |----------|-------|
 | Arriendo anual (12 × $150.000) | **$1.800.000 + IVA** |
-| Insumos distribuidor (tamper, Cafiza y otros) | Según pedidos reales (facturación aparte) |
+| Insumos de barra (tamper, Cafiza y otros) | **De cargo del Cliente** (pueden gestionarse a través de Coffee Roasting Labs) |
 | Penalización por salida anticipada | **$450.000 + IVA** (solo si aplica) |
 
 ### 4.3 Beneficio esperado
@@ -154,8 +169,8 @@ El retiro del equipo se coordinará dentro de un plazo razonable una vez pagadas
 Con esta estructura, el Cliente obtiene:
 1. Acceso a un set barista profesional (Appia Life + MDX) **sin invertir ~$5.000.000** en compra.
 2. Una cuota de arriendo **bajo el rango habitual** de arriendos profesionales publicados en Chile.
-3. **Asesoría** para operar y cuidar el equipo.
-4. Cadena de abastecimiento clara de **insumos críticos de barra** (tamper, Cafiza y afines) a través del Proponente como distribuidor.
+3. **Asesoría** de Coffee Roasting Labs para operar y cuidar el equipo.
+4. Claridad en insumos críticos de barra (**tamper, Cafiza y afines**): los compra el Cliente, y Coffee Roasting Labs puede **gestionar** su abastecimiento.
 5. Contrato acotado a **un año**, con regla simple y previsible de salida anticipada.
 
 ---
@@ -168,20 +183,20 @@ La aceptación de esta propuesta se formalizará mediante contrato de arriendo y
 
 ---
 
-Sin otro particular, quedamos atentos a sus comentarios para ajustar cobertura geográfica, fecha exacta de instalación y el pedido inicial de insumos (tamper, Cafiza y complementos).
+Sin otro particular, quedamos atentos a sus comentarios para ajustar cobertura geográfica, fecha exacta de instalación y la gestión del pedido inicial de insumos (tamper, Cafiza y complementos).
 
 Atentamente,
 
 _______________________________  
-**Nombre / Razón social del Proponente**  
-RUT: ________________  
-Correo: ________________  
-Teléfono / WhatsApp: ________________  
+**Tostaduría Erik Berwart Araya EIRL**  
+Nombre de fantasía: **Coffee Roasting Labs**  
+RUT: **77.586.349-8**  
+Fono / WhatsApp: **+56 9 2372 1634**  
 
 ---
 
 ### Anexos sugeridos al firmar (no incluidos en esta carta)
 
 - Anexo A: Inventario de entrega (máquina, molino, portafiltros, accesorios)
-- Anexo B: Lista de precios de insumos de distribuidor (tamper, Cafiza, etc.)
+- Anexo B: Listado referencial de insumos de barra a cargo del Cliente (tamper, Cafiza, etc.) y modalidad de gestión
 - Anexo C: Acta de instalación y capacitación
