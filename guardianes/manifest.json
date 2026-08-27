@@ -1,0 +1,32 @@
+{
+  "name": "Guardianes del Bienestar Financiero",
+  "short_name": "Guardianes",
+  "description": "Juego de 5 expedientes sobre bienestar financiero para 6° básico. Juega en el teléfono.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14323F",
+  "theme_color": "#14323F",
+  "lang": "es-CL",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
