@@ -2,7 +2,7 @@
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
-  const STORAGE = "guardianes-v1";
+  const STORAGE = "guardianes-v2";
 
   const defaultState = () => ({
     screen: "splash",
@@ -253,7 +253,7 @@
       <div class="hero">
         <div class="hello">Hola, ${esc(n)}</div>
         <h1>Tu mesa de expedientes</h1>
-        <p class="note" style="color:rgba(255,255,255,.75)">Resuelve las 5 estaciones y abre el sobre final.</p>
+        <p class="note" style="color:rgba(255,255,255,.75)">Cinco palabras. Un sobre. Ordénalas del 01 al 05.</p>
         <div class="keys-row">
           ${[1, 2, 3, 4, 5]
             .map(
@@ -277,17 +277,17 @@
 
   function renderVault() {
     const pieces = [
-      state.keys[1] || "••••",
-      state.keys[2] || "•",
-      state.keys[3] || "•-•-•",
-      state.keys[4] || "••••••",
-      state.keys[5] || "•",
+      state.keys[1] || "·",
+      state.keys[2] || "·",
+      state.keys[3] || "·",
+      state.keys[4] || "·",
+      state.keys[5] || "·",
     ];
     return `
       <div class="pad" style="padding-top:18px">
         <div class="tiny">Caja fuerte</div>
         <h1 style="margin:6px 0 8px">Claves del sobre</h1>
-        <p class="note">Cada estación entrega un fragmento. Cuando estén las cinco, se abre el sobre con espejo.</p>
+        <p class="note">Cada estación entrega una palabra. Ordénalas del expediente 01 al 05 y el sobre habla.</p>
         <div class="space"></div>
         ${GAME.stations
           .map(
@@ -303,8 +303,9 @@
           allDone()
             ? `<div class="finale">
                 <div class="key-reveal">
-                  <div class="tiny" style="opacity:.7">Código final</div>
-                  <div class="big" style="font-size:22px;line-height:1.35">${esc(pieces.join(" · "))}</div>
+                  <div class="tiny" style="opacity:.7">En orden, 01 al 05</div>
+                  <div class="big" style="font-size:20px;line-height:1.4">${esc(pieces.join(" "))}</div>
+                  <p class="note" style="color:var(--gold-2);margin-top:8px">${esc(GAME.motto)}</p>
                 </div>
                 <button class="btn gold" data-act="finale">Ver el sobre abierto</button>
               </div>`
@@ -315,18 +316,21 @@
   }
 
   function renderFinale() {
-    const code = [state.keys[1], state.keys[2], state.keys[3], state.keys[4], state.keys[5]].join(" · ");
+    const words = GAME.phrase.map((w, i) => {
+      const got = state.keys[i + 1];
+      return `<span class="word">${esc(got || w)}</span>`;
+    }).join(" ");
     return `
       <div class="pad finale">
         <div class="badge" style="margin:8px auto 12px">✓</div>
-        <div class="tiny">Misión cumplida</div>
-        <h1>El sobre está abierto</h1>
-        <p class="note">Agente ${esc(state.name)}, reuniste las cinco claves del bienestar financiero.</p>
-        <div class="code-final">${esc(code)}</div>
-        <p class="note">DUDA · 7 · tu código % · SEGURO · 6</p>
+        <div class="tiny">El sobre con espejo</div>
+        <h1>Las claves, en orden</h1>
+        <p class="note">Agente ${esc(state.name)}, uniste las cinco palabras del 01 al 05.</p>
+        <div class="code-final phrase">${words}</div>
+        <p class="motto">${esc(GAME.motto)}</p>
         <div class="space"></div>
         <div class="feedback" style="text-align:left">
-          Dudar de un mensaje raro, comparar antes de comprar, ahorrar al menos lo que gastas, proteger lo tuyo y hacer crecer el dinero en un lugar seguro. Eso es ser guardián.
+          Dudar de un mensaje raro, comparar antes de comprar, ahorrar al menos lo que gastas, proteger lo tuyo y hacer crecer el dinero en un lugar seguro. Eso es ser guardián. Y el último guardián eres tú.
         </div>
         <div class="space-lg"></div>
         <button class="btn primary" data-act="home">Volver a la mesa</button>
@@ -810,7 +814,7 @@
       p.step = "feedback";
       save();
       render();
-      toast("Clave obtenida: DUDA");
+      toast("Clave obtenida: " + GAME.keys[1]);
     } else {
       toast("Necesitas al menos 3 de las 4 alertas. Intenta de nuevo.");
       startStation(1);
@@ -853,7 +857,7 @@
     p.step = "feedback";
     save();
     render();
-    toast("Clave obtenida: 7");
+    toast("Clave obtenida: " + GAME.keys[2]);
   }
 
   function gradeAhorro() {
@@ -877,8 +881,7 @@
       toast("El ahorro debe ser igual o mayor que el gasto");
       return;
     }
-    const code = `${a / 10}${g / 10}${c / 10}`;
-    setKey(3, code.split("").join("-"));
+    setKey(3, GAME.keys[3]);
     logEntry(
       "Expediente 03 · Ahorro",
       `Ahorro ${a}% (${clp((GAME.gift * a) / 100)}) · Gasto ${g}% · Compartir ${c}%. Meta: ${p.meta || "—"}. ${p.why || ""}`
@@ -886,7 +889,7 @@
     p.step = "feedback";
     save();
     render();
-    toast("Código % obtenido: " + state.keys[3]);
+    toast("Clave obtenida: " + GAME.keys[3]);
   }
 
   function tryMatch(protId) {
@@ -902,11 +905,11 @@
       if (navigator.vibrate) navigator.vibrate(16);
       if (p.matched.length === 6) {
         setKey(4, GAME.keys[4]);
-        logEntry("Expediente 04 · Cuidar lo mío", "Seis parejas correctas. Palabra: SEGURO.");
+        logEntry("Expediente 04 · Cuidar lo mío", "Seis parejas correctas. Palabra: " + GAME.keys[4] + ".");
         p.step = "feedback";
         save();
         render();
-        toast("Clave obtenida: SEGURO");
+        toast("Clave obtenida: " + GAME.keys[4]);
         return;
       }
       save();
@@ -943,7 +946,7 @@
     p.step = "feedback";
     save();
     render();
-    toast("Dígito obtenido: 6");
+    toast("Clave obtenida: " + GAME.keys[5]);
   }
 
   function onClick(e) {

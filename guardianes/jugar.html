@@ -276,9 +276,13 @@ h3 { font-size: 18px; }
   min-height: 46px;
   display: grid;
   place-items: center;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 4px 2px;
+  line-height: 1.15;
+  word-break: break-word;
 }
 .key-chip.on {
   background: var(--gold);
@@ -527,9 +531,10 @@ h3 { font-size: 18px; }
 }
 .key-reveal .big {
   font-family: var(--display);
-  font-size: 36px;
+  font-size: 30px;
   color: var(--gold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
+  word-break: break-word;
 }
 
 .finale {
@@ -537,15 +542,26 @@ h3 { font-size: 18px; }
   padding-top: 12px;
 }
 .code-final {
-  margin: 18px 0;
+  margin: 18px 0 8px;
   background: var(--navy);
   color: var(--gold-2);
   border-radius: 22px;
-  padding: 20px 12px;
+  padding: 20px 14px;
   font-family: var(--display);
   font-size: 22px;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+}
+.code-final.phrase .word {
+  display: inline-block;
+  margin: 2px 3px;
+}
+.motto {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 4px 0 8px;
 }
 
 .log {
@@ -683,7 +699,7 @@ const GAME = {
       short: "Consumo",
       emoji: "👟",
       color: "#E8873A",
-      keyLabel: "Dígito",
+      keyLabel: "Palabra",
       intro:
         "Tomás quiere zapatillas de $30.000. Ya tiene $20.000. Le faltan $10.000. Su mesada es de $5.000 a la semana. Calcula las 3 opciones y elige la más conveniente.",
       talk: "¿Alguna vez tuviste que elegir entre comprar algo ahora o esperar a juntar la plata? ¿Qué elegiste y por qué?",
@@ -698,7 +714,7 @@ const GAME = {
       short: "Ahorro",
       emoji: "🐷",
       color: "#2A9D8F",
-      keyLabel: "Código %",
+      keyLabel: "Palabra",
       intro:
         "Recibiste $10.000 de cumpleaños. Elige 3 fichas de porcentaje (sin repetir) que sumen 100% para Ahorrar, Gastar y Compartir. El ahorro debe ser igual o mayor que el gasto.",
       talk: "¿Alguna vez ahorraste para algo que realmente querías? ¿Cómo te fue?",
@@ -715,7 +731,7 @@ const GAME = {
       color: "#5B6BC0",
       keyLabel: "Palabra",
       intro:
-        "Hay 6 riesgos y 6 protecciones. Arma las 6 parejas: cada riesgo con su protección correcta. Por cada acierto desbloqueas una letra.",
+        "Hay 6 riesgos y 6 protecciones. Arma las 6 parejas: cada riesgo con su protección correcta. Por cada acierto se enciende una letra de la clave.",
       talk: "¿Cuál de estos riesgos te ha pasado a ti o a alguien que conoces? ¿Cómo lo resolvieron?",
       feedback:
         "Hay dos formas de cuidar algo: prevenir (como el kit de la bici o la funda del celular, que evitan que el problema pase) y estar cubierto (como el seguro de salud o de hogar, que te ayuda cuando el problema ya pasó). Las dos son importantes y se complementan.",
@@ -728,7 +744,7 @@ const GAME = {
       short: "Crecer",
       emoji: "📈",
       color: "#C9A227",
-      keyLabel: "Dígito",
+      keyLabel: "Palabra",
       intro:
         "Compara los dos chanchitos y calcula la diferencia. Luego lee la oferta y marca las señales de alerta.",
       talk: "¿Por qué la cuenta de ahorro entrega más dinero que guardar el dinero en un cajón? ¿Qué ventaja tiene ahorrar en una institución financiera?",
@@ -842,7 +858,7 @@ const GAME = {
   pairs: [
     {
       id: "R1",
-      letter: "S",
+      letter: "E",
       risk: "Se te pincha la rueda de la bici en el camino al colegio.",
       riskIcon: "🚲",
       prot: "Revisar la bici antes de salir y andar con un kit básico de reparación.",
@@ -850,7 +866,7 @@ const GAME = {
     },
     {
       id: "R2",
-      letter: "E",
+      letter: "R",
       risk: "Se te cae y se quiebra la pantalla del celular.",
       riskIcon: "📱",
       prot: "Usar una funda protectora y no prestarlo a cualquiera.",
@@ -858,7 +874,7 @@ const GAME = {
     },
     {
       id: "R3",
-      letter: "G",
+      letter: "E",
       risk: "Te enfermas y debes ir a una clínica.",
       riskIcon: "🤒",
       prot: "El seguro de salud o escolar cubre parte del costo de la atención.",
@@ -866,7 +882,7 @@ const GAME = {
     },
     {
       id: "R4",
-      letter: "U",
+      letter: "S",
       risk: "Pierdes tu mochila en el paseo de curso.",
       riskIcon: "🎒",
       prot: "Marcar tus cosas con tu nombre y avisar rápido si algo se pierde.",
@@ -874,7 +890,7 @@ const GAME = {
     },
     {
       id: "R5",
-      letter: "R",
+      letter: "✦",
       risk: "Se moja tu cuaderno porque se te olvidó la funda para la lluvia.",
       riskIcon: "🌧",
       prot: "Llevar los útiles en una funda o bolsa impermeable.",
@@ -882,7 +898,7 @@ const GAME = {
     },
     {
       id: "R6",
-      letter: "O",
+      letter: "✦",
       risk: "Sin querer, rompes un vidrio jugando en la casa de un amigo.",
       riskIcon: "🏠",
       prot: "El seguro de hogar de la familia cubre reparaciones como esa.",
@@ -898,18 +914,21 @@ const GAME = {
   ],
 
   keys: {
-    1: "DUDA",
-    2: "7",
-    4: "SEGURO",
-    5: "6",
+    1: "EL",
+    2: "GUARDIÁN",
+    3: "ÚLTIMO",
+    4: "ERES",
+    5: "TÚ",
   },
+  phrase: ["EL", "GUARDIÁN", "ÚLTIMO", "ERES", "TÚ"],
+  motto: "El último guardián eres tú.",
 };
 
 (() => {
   const $ = (sel, el = document) => el.querySelector(sel);
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
-  const STORAGE = "guardianes-v1";
+  const STORAGE = "guardianes-v2";
 
   const defaultState = () => ({
     screen: "splash",
@@ -1160,7 +1179,7 @@ const GAME = {
       <div class="hero">
         <div class="hello">Hola, ${esc(n)}</div>
         <h1>Tu mesa de expedientes</h1>
-        <p class="note" style="color:rgba(255,255,255,.75)">Resuelve las 5 estaciones y abre el sobre final.</p>
+        <p class="note" style="color:rgba(255,255,255,.75)">Cinco palabras. Un sobre. Ordénalas del 01 al 05.</p>
         <div class="keys-row">
           ${[1, 2, 3, 4, 5]
             .map(
@@ -1184,17 +1203,17 @@ const GAME = {
 
   function renderVault() {
     const pieces = [
-      state.keys[1] || "••••",
-      state.keys[2] || "•",
-      state.keys[3] || "•-•-•",
-      state.keys[4] || "••••••",
-      state.keys[5] || "•",
+      state.keys[1] || "·",
+      state.keys[2] || "·",
+      state.keys[3] || "·",
+      state.keys[4] || "·",
+      state.keys[5] || "·",
     ];
     return `
       <div class="pad" style="padding-top:18px">
         <div class="tiny">Caja fuerte</div>
         <h1 style="margin:6px 0 8px">Claves del sobre</h1>
-        <p class="note">Cada estación entrega un fragmento. Cuando estén las cinco, se abre el sobre con espejo.</p>
+        <p class="note">Cada estación entrega una palabra. Ordénalas del expediente 01 al 05 y el sobre habla.</p>
         <div class="space"></div>
         ${GAME.stations
           .map(
@@ -1210,8 +1229,9 @@ const GAME = {
           allDone()
             ? `<div class="finale">
                 <div class="key-reveal">
-                  <div class="tiny" style="opacity:.7">Código final</div>
-                  <div class="big" style="font-size:22px;line-height:1.35">${esc(pieces.join(" · "))}</div>
+                  <div class="tiny" style="opacity:.7">En orden, 01 al 05</div>
+                  <div class="big" style="font-size:20px;line-height:1.4">${esc(pieces.join(" "))}</div>
+                  <p class="note" style="color:var(--gold-2);margin-top:8px">${esc(GAME.motto)}</p>
                 </div>
                 <button class="btn gold" data-act="finale">Ver el sobre abierto</button>
               </div>`
@@ -1222,18 +1242,21 @@ const GAME = {
   }
 
   function renderFinale() {
-    const code = [state.keys[1], state.keys[2], state.keys[3], state.keys[4], state.keys[5]].join(" · ");
+    const words = GAME.phrase.map((w, i) => {
+      const got = state.keys[i + 1];
+      return `<span class="word">${esc(got || w)}</span>`;
+    }).join(" ");
     return `
       <div class="pad finale">
         <div class="badge" style="margin:8px auto 12px">✓</div>
-        <div class="tiny">Misión cumplida</div>
-        <h1>El sobre está abierto</h1>
-        <p class="note">Agente ${esc(state.name)}, reuniste las cinco claves del bienestar financiero.</p>
-        <div class="code-final">${esc(code)}</div>
-        <p class="note">DUDA · 7 · tu código % · SEGURO · 6</p>
+        <div class="tiny">El sobre con espejo</div>
+        <h1>Las claves, en orden</h1>
+        <p class="note">Agente ${esc(state.name)}, uniste las cinco palabras del 01 al 05.</p>
+        <div class="code-final phrase">${words}</div>
+        <p class="motto">${esc(GAME.motto)}</p>
         <div class="space"></div>
         <div class="feedback" style="text-align:left">
-          Dudar de un mensaje raro, comparar antes de comprar, ahorrar al menos lo que gastas, proteger lo tuyo y hacer crecer el dinero en un lugar seguro. Eso es ser guardián.
+          Dudar de un mensaje raro, comparar antes de comprar, ahorrar al menos lo que gastas, proteger lo tuyo y hacer crecer el dinero en un lugar seguro. Eso es ser guardián. Y el último guardián eres tú.
         </div>
         <div class="space-lg"></div>
         <button class="btn primary" data-act="home">Volver a la mesa</button>
@@ -1717,7 +1740,7 @@ const GAME = {
       p.step = "feedback";
       save();
       render();
-      toast("Clave obtenida: DUDA");
+      toast("Clave obtenida: " + GAME.keys[1]);
     } else {
       toast("Necesitas al menos 3 de las 4 alertas. Intenta de nuevo.");
       startStation(1);
@@ -1760,7 +1783,7 @@ const GAME = {
     p.step = "feedback";
     save();
     render();
-    toast("Clave obtenida: 7");
+    toast("Clave obtenida: " + GAME.keys[2]);
   }
 
   function gradeAhorro() {
@@ -1784,8 +1807,7 @@ const GAME = {
       toast("El ahorro debe ser igual o mayor que el gasto");
       return;
     }
-    const code = `${a / 10}${g / 10}${c / 10}`;
-    setKey(3, code.split("").join("-"));
+    setKey(3, GAME.keys[3]);
     logEntry(
       "Expediente 03 · Ahorro",
       `Ahorro ${a}% (${clp((GAME.gift * a) / 100)}) · Gasto ${g}% · Compartir ${c}%. Meta: ${p.meta || "—"}. ${p.why || ""}`
@@ -1793,7 +1815,7 @@ const GAME = {
     p.step = "feedback";
     save();
     render();
-    toast("Código % obtenido: " + state.keys[3]);
+    toast("Clave obtenida: " + GAME.keys[3]);
   }
 
   function tryMatch(protId) {
@@ -1809,11 +1831,11 @@ const GAME = {
       if (navigator.vibrate) navigator.vibrate(16);
       if (p.matched.length === 6) {
         setKey(4, GAME.keys[4]);
-        logEntry("Expediente 04 · Cuidar lo mío", "Seis parejas correctas. Palabra: SEGURO.");
+        logEntry("Expediente 04 · Cuidar lo mío", "Seis parejas correctas. Palabra: " + GAME.keys[4] + ".");
         p.step = "feedback";
         save();
         render();
-        toast("Clave obtenida: SEGURO");
+        toast("Clave obtenida: " + GAME.keys[4]);
         return;
       }
       save();
@@ -1850,7 +1872,7 @@ const GAME = {
     p.step = "feedback";
     save();
     render();
-    toast("Dígito obtenido: 6");
+    toast("Clave obtenida: " + GAME.keys[5]);
   }
 
   function onClick(e) {
@@ -1974,7 +1996,7 @@ const GAME = {
         setTimeout(() => e.target.scrollIntoView({ block: "center", behavior: "smooth" }), 280);
       }
     });
-    if ("serviceWorker" in navigator && !document.currentScript) {
+    if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("./sw.js").catch(() => {});
     }
     if (!state.screen) state.screen = "splash";

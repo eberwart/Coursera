@@ -27,7 +27,7 @@ const GAME = {
       short: "Consumo",
       emoji: "👟",
       color: "#E8873A",
-      keyLabel: "Dígito",
+      keyLabel: "Palabra",
       intro:
         "Tomás quiere zapatillas de $30.000. Ya tiene $20.000. Le faltan $10.000. Su mesada es de $5.000 a la semana. Calcula las 3 opciones y elige la más conveniente.",
       talk: "¿Alguna vez tuviste que elegir entre comprar algo ahora o esperar a juntar la plata? ¿Qué elegiste y por qué?",
@@ -42,7 +42,7 @@ const GAME = {
       short: "Ahorro",
       emoji: "🐷",
       color: "#2A9D8F",
-      keyLabel: "Código %",
+      keyLabel: "Palabra",
       intro:
         "Recibiste $10.000 de cumpleaños. Elige 3 fichas de porcentaje (sin repetir) que sumen 100% para Ahorrar, Gastar y Compartir. El ahorro debe ser igual o mayor que el gasto.",
       talk: "¿Alguna vez ahorraste para algo que realmente querías? ¿Cómo te fue?",
@@ -59,7 +59,7 @@ const GAME = {
       color: "#5B6BC0",
       keyLabel: "Palabra",
       intro:
-        "Hay 6 riesgos y 6 protecciones. Arma las 6 parejas: cada riesgo con su protección correcta. Por cada acierto desbloqueas una letra.",
+        "Hay 6 riesgos y 6 protecciones. Arma las 6 parejas: cada riesgo con su protección correcta. Por cada acierto se enciende una letra de la clave.",
       talk: "¿Cuál de estos riesgos te ha pasado a ti o a alguien que conoces? ¿Cómo lo resolvieron?",
       feedback:
         "Hay dos formas de cuidar algo: prevenir (como el kit de la bici o la funda del celular, que evitan que el problema pase) y estar cubierto (como el seguro de salud o de hogar, que te ayuda cuando el problema ya pasó). Las dos son importantes y se complementan.",
@@ -72,7 +72,7 @@ const GAME = {
       short: "Crecer",
       emoji: "📈",
       color: "#C9A227",
-      keyLabel: "Dígito",
+      keyLabel: "Palabra",
       intro:
         "Compara los dos chanchitos y calcula la diferencia. Luego lee la oferta y marca las señales de alerta.",
       talk: "¿Por qué la cuenta de ahorro entrega más dinero que guardar el dinero en un cajón? ¿Qué ventaja tiene ahorrar en una institución financiera?",
@@ -186,7 +186,7 @@ const GAME = {
   pairs: [
     {
       id: "R1",
-      letter: "S",
+      letter: "E",
       risk: "Se te pincha la rueda de la bici en el camino al colegio.",
       riskIcon: "🚲",
       prot: "Revisar la bici antes de salir y andar con un kit básico de reparación.",
@@ -194,7 +194,7 @@ const GAME = {
     },
     {
       id: "R2",
-      letter: "E",
+      letter: "R",
       risk: "Se te cae y se quiebra la pantalla del celular.",
       riskIcon: "📱",
       prot: "Usar una funda protectora y no prestarlo a cualquiera.",
@@ -202,7 +202,7 @@ const GAME = {
     },
     {
       id: "R3",
-      letter: "G",
+      letter: "E",
       risk: "Te enfermas y debes ir a una clínica.",
       riskIcon: "🤒",
       prot: "El seguro de salud o escolar cubre parte del costo de la atención.",
@@ -210,7 +210,7 @@ const GAME = {
     },
     {
       id: "R4",
-      letter: "U",
+      letter: "S",
       risk: "Pierdes tu mochila en el paseo de curso.",
       riskIcon: "🎒",
       prot: "Marcar tus cosas con tu nombre y avisar rápido si algo se pierde.",
@@ -218,7 +218,7 @@ const GAME = {
     },
     {
       id: "R5",
-      letter: "R",
+      letter: "✦",
       risk: "Se moja tu cuaderno porque se te olvidó la funda para la lluvia.",
       riskIcon: "🌧",
       prot: "Llevar los útiles en una funda o bolsa impermeable.",
@@ -226,7 +226,7 @@ const GAME = {
     },
     {
       id: "R6",
-      letter: "O",
+      letter: "✦",
       risk: "Sin querer, rompes un vidrio jugando en la casa de un amigo.",
       riskIcon: "🏠",
       prot: "El seguro de hogar de la familia cubre reparaciones como esa.",
@@ -242,9 +242,12 @@ const GAME = {
   ],
 
   keys: {
-    1: "DUDA",
-    2: "7",
-    4: "SEGURO",
-    5: "6",
+    1: "EL",
+    2: "GUARDIÁN",
+    3: "ÚLTIMO",
+    4: "ERES",
+    5: "TÚ",
   },
+  phrase: ["EL", "GUARDIÁN", "ÚLTIMO", "ERES", "TÚ"],
+  motto: "El último guardián eres tú.",
 };

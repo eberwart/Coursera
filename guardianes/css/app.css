@@ -262,9 +262,13 @@ h3 { font-size: 18px; }
   min-height: 46px;
   display: grid;
   place-items: center;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 4px 2px;
+  line-height: 1.15;
+  word-break: break-word;
 }
 .key-chip.on {
   background: var(--gold);
@@ -513,9 +517,10 @@ h3 { font-size: 18px; }
 }
 .key-reveal .big {
   font-family: var(--display);
-  font-size: 36px;
+  font-size: 30px;
   color: var(--gold);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
+  word-break: break-word;
 }
 
 .finale {
@@ -523,15 +528,26 @@ h3 { font-size: 18px; }
   padding-top: 12px;
 }
 .code-final {
-  margin: 18px 0;
+  margin: 18px 0 8px;
   background: var(--navy);
   color: var(--gold-2);
   border-radius: 22px;
-  padding: 20px 12px;
+  padding: 20px 14px;
   font-family: var(--display);
   font-size: 22px;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+}
+.code-final.phrase .word {
+  display: inline-block;
+  margin: 2px 3px;
+}
+.motto {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 4px 0 8px;
 }
 
 .log {
