@@ -66,7 +66,7 @@
 
   function clock() {
     const d = new Date();
-    return d.toLocaleTimeString("es-CL", { hour: "2-digit", minute: "2-digit" });
+    return d.toLocaleTimeString("es-CL", { hour: "2-digit", minute: "2-digit", hour12: false });
   }
 
   function toast(msg) {
@@ -96,6 +96,10 @@
   }
 
   function go(screen, extra) {
+    const t = $("#toast");
+    if (t) t.hidden = true;
+    const c = $("#confetti");
+    if (c) c.innerHTML = "";
     state.screen = screen;
     if (["home", "vault", "bitacora"].includes(screen)) state.tab = screen;
     if (extra) Object.assign(state, extra);
@@ -236,7 +240,7 @@
               <div class="num">EXPEDIENTE ${s.code}</div>
               <span class="emo">${s.emoji}</span>
               <h3>${esc(s.short)}</h3>
-              <div class="tag">${got ? "Clave: " + esc(got) : "Sin resolver"}</div>
+              <div class="tag ${got ? "on" : ""}">${got ? "Clave: " + esc(got) : "Sin resolver"}</div>
             </div>
           </button>
         `;
@@ -387,7 +391,7 @@
       <div class="pad">
         ${header(s)}
         <div class="key-reveal">
-          <div class="tiny" style="opacity:.7">${esc(s.keyLabel)} desbloqueada</div>
+          <div class="tiny" style="opacity:.7">Clave lista</div>
           <div class="big">${esc(state.keys[s.id] || "—")}</div>
         </div>
         <div class="feedback">${esc(s.feedback)}</div>
@@ -651,6 +655,7 @@
   function chrome(content, showTabs) {
     $("#screen").innerHTML = content;
     $("#tabs").hidden = !showTabs;
+    $("#tabs").classList.toggle("visible", showTabs);
     $("#app").classList.toggle("dark", state.screen === "splash");
     $$("#tabs button").forEach((b) => b.classList.toggle("active", b.dataset.tab === state.tab));
     $("#clock").textContent = clock();
@@ -790,6 +795,11 @@
 
   function gradeConsumo() {
     const p = state.play;
+    $$("[data-calc]").forEach((inp) => {
+      p.calcs[inp.dataset.calc][inp.dataset.k] = inp.value;
+    });
+    const why = $("#why2");
+    if (why) p.why = why.value;
     if (!p.choice) {
       toast("Elige una opción (A, B o C)");
       return;
@@ -821,6 +831,10 @@
 
   function gradeAhorro() {
     const p = state.play;
+    const meta = $("#meta");
+    const why = $("#why3");
+    if (meta) p.meta = meta.value;
+    if (why) p.why = why.value;
     const a = p.assign.ahorro;
     const g = p.assign.gasto;
     const c = p.assign.compartir;
@@ -883,6 +897,10 @@
 
   function gradeCrecer() {
     const p = state.play;
+    const pigb = $("#pigb");
+    const diff = $("#diff");
+    if (pigb) p.b = pigb.value;
+    if (diff) p.diff = diff.value;
     const b = parseMoney(p.b);
     const d = parseMoney(p.diff);
     if (b !== 52500 || d !== 2500) {
