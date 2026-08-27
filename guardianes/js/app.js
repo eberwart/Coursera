@@ -206,10 +206,10 @@
         <div class="badge">G</div>
         <div class="tiny" style="opacity:.7">Agencia escolar</div>
         <h1>Guardianes del<br>bienestar financiero</h1>
-        <p>5 expedientes · 1 sobre con espejo</p>
+        <p>Juego para 1 persona o un grupo. Completa 5 expedientes y abre el sobre.</p>
         <div class="course">${GAME.course}</div>
         <div class="space-lg"></div>
-        <button class="btn gold" data-act="begin">Entrar a la agencia</button>
+        <button class="btn gold" data-act="begin">Jugar ahora</button>
       </div>
     `;
   }
@@ -219,11 +219,13 @@
       <div class="pad" style="padding-top:28px">
         <div class="tiny">Credencial de agente</div>
         <h1 style="margin:8px 0 10px">¿Cómo te llamas?</h1>
-        <p class="note">Tu nombre aparece en la bitácora y en el expediente final.</p>
+        <p class="note">Tu nombre aparece en la bitácora. Si juegan en grupo, pongan el nombre del equipo.</p>
         <div class="space"></div>
-        <input class="field" id="name" maxlength="24" placeholder="Ej: Matías, Sofía…" value="${esc(state.name)}" />
+        <input class="field" id="name" maxlength="24" placeholder="Ej: Matías, Sofía, Grupo 6B…" value="${esc(state.name)}" />
         <div class="space-lg"></div>
-        <button class="btn primary" data-act="save-name">Recibir credencial</button>
+        <button class="btn primary" data-act="save-name">Empezar a jugar</button>
+        <div class="space"></div>
+        <button class="btn ghost" data-act="skip-name">Seguir como Agente</button>
       </div>
     `;
   }
@@ -267,6 +269,8 @@
           <strong>${allDone() ? "Abrir el sobre con espejo" : "Sobre sellado"}</strong>
           <span>${doneCount()}/5 claves reunidas</span>
         </button>
+        <div class="space"></div>
+        <button class="btn ghost" data-act="share">Compartir este juego</button>
       </div>
     `;
   }
@@ -350,6 +354,8 @@
         <div class="tiny">Diario del agente</div>
         <h1 style="margin:6px 0 12px">Bitácora</h1>
         ${items}
+        <div class="space"></div>
+        <button class="btn ghost" data-act="share">Compartir este juego</button>
         <div class="space"></div>
         <button class="btn ghost" data-act="reset">Reiniciar misión</button>
       </div>
@@ -745,6 +751,27 @@
     });
   }
 
+  function shareGame() {
+    const url = location.href.split("#")[0];
+    const payload = {
+      title: "Guardianes del bienestar financiero",
+      text: "Juega los 5 expedientes en el teléfono (6° básico).",
+      url,
+    };
+    if (navigator.share) {
+      navigator.share(payload).catch(() => {});
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(
+        () => toast("Enlace copiado. Pégalo en WhatsApp o el correo."),
+        () => toast(url)
+      );
+      return;
+    }
+    toast(url);
+  }
+
   function saveName() {
     const v = ($("#name")?.value || state.name || "").trim();
     if (v.length < 2) {
@@ -933,6 +960,13 @@
       return;
     }
     if (act === "save-name") return saveName();
+    if (act === "skip-name") {
+      const typed = ($("#name")?.value || "").trim();
+      state.name = typed.length >= 2 ? typed : "Agente";
+      go("home");
+      return;
+    }
+    if (act === "share") return shareGame();
     if (act === "home") return go("home");
     if (act === "vault") return go(allDone() && t.classList.contains("vault-cta") && doneCount() === 5 ? "vault" : "vault");
     if (act === "finale") return go("finale");
@@ -1028,6 +1062,14 @@
       if (c) c.textContent = clock();
     }, 30000);
     document.addEventListener("click", onClick);
+    document.addEventListener("focusin", (e) => {
+      if (e.target.matches && e.target.matches("input, textarea")) {
+        setTimeout(() => e.target.scrollIntoView({ block: "center", behavior: "smooth" }), 280);
+      }
+    });
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    }
     if (!state.screen) state.screen = "splash";
     render();
   }

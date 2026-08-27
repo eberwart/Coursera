@@ -34,7 +34,7 @@ body {
 }
 
 button, input, textarea { font-family: inherit; }
-button { cursor: pointer; border: none; background: none; }
+button { cursor: pointer; border: none; background: none; touch-action: manipulation; }
 img { max-width: 100%; }
 
 .stage {
@@ -583,20 +583,28 @@ h3 { font-size: 18px; }
 .space { height: 12px; }
 .space-lg { height: 20px; }
 
-@media (max-width: 480px) {
+@media (max-width: 720px), (display-mode: standalone) {
+  .hint-desk { display: none; }
+  .status { display: none; }
   .stage { padding: 0; }
   .device {
     width: 100%;
     height: 100dvh;
+    height: 100svh;
     border-radius: 0;
     padding: 0;
     box-shadow: none;
   }
   .device::before { display: none; }
   .app { border-radius: 0; }
+  .screen { padding-top: max(12px, env(safe-area-inset-top)); }
+  .app.dark .screen { padding-top: 0; }
+  .splash { padding-top: max(48px, calc(env(safe-area-inset-top) + 24px)); min-height: 100%; }
+  .tabs.visible { padding-bottom: max(14px, env(safe-area-inset-bottom)); }
+  .pad { padding-bottom: 32px; }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 721px) {
   .hint-desk {
     position: fixed;
     bottom: 18px;
