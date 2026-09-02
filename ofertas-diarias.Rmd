@@ -1,0 +1,122 @@
+---
+title: "Ofertas diarias de Mercado Público — CRL Coffee"
+author: "Coffee Roasting Labs"
+date: "`r format(Sys.time(), '%d-%m-%Y %H:%M', tz = 'America/Santiago')` hora Chile"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = TRUE, warning = FALSE)
+```
+
+Este notebook consulta las APIs oficiales de ChileCompra y arma la lista del día para **café de especialidad en grano**.
+
+Úsalo así todas las mañanas:
+
+1. Abre este archivo en RStudio (`ofertas-diarias.Rmd`).
+2. En la primera celda de código, deja tu ticket (o la variable de entorno).
+3. **Knit** o ejecuta todos los chunks (Ctrl+Shift+Enter en cada uno, o *Run All*).
+4. Revisa las tablas. Copia el código y búscalo en [Mercado Público](https://www.mercadopublico.cl).
+
+La corrida tarda unos minutos: ChileCompra a veces responde lento.
+
+## 1. Ticket y paquetes
+
+El ticket es personal y gratuito. Pídelo con Clave Única en [chilecompra.cl/api](https://www.chilecompra.cl/api/). No lo subas a GitHub.
+
+```{r paquetes}
+paquetes <- c("httr", "jsonlite")
+faltan <- paquetes[!paquetes %in% rownames(installed.packages())]
+if (length(faltan)) install.packages(faltan, repos = "https://cloud.r-project.org")
+
+library(httr)
+library(jsonlite)
+
+# Opción A (recomendada): variable de entorno, sin pegar el ticket en el archivo
+# Sys.setenv(MERCADO_PUBLICO_TICKET = "pega-aqui-tu-ticket")
+
+# Opción B: descomenta y pega el ticket solo en tu computador
+# ticket <- "pega-aqui-tu-ticket"
+ticket <- Sys.getenv("MERCADO_PUBLICO_TICKET", unset = "")
+
+source(file.path("r", "crl_ofertas.R"), encoding = "UTF-8")
+```
+
+```{r ticket-check}
+if (!nzchar(ticket)) {
+  ticket <- ticket_mp()
+}
+invisible(ticket_mp(ticket))
+cat("Ticket listo. Fecha Chile:", format(Sys.Date(), "%d-%m-%Y"), "\n")
+```
+
+## 2. Bajar ofertas de hoy
+
+`solo_productos = TRUE` oculta coffee break y deja solo compra de café/insumos.
+
+```{r recolectar}
+ofertas <- recolectar_ofertas(
+  ticket = ticket,
+  solo_productos = FALSE,
+  max_detalles = 25,
+  log = TRUE
+)
+tabla <- ofertas_a_tabla(ofertas)
+tabla <- subset(tabla, categoria != "descartada")
+
+dir.create("reportes", showWarnings = FALSE)
+csv_path <- file.path("reportes", paste0("ofertas-", format(Sys.Date(), "%Y-%m-%d"), ".csv"))
+write.csv(tabla, csv_path, row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(tabla, file.path("reportes", "ofertas-hoy.csv"), row.names = FALSE, fileEncoding = "UTF-8")
+
+cat(
+  nrow(tabla), "ofertas abiertas ·",
+  sum(tabla$categoria == "excelente"), "excelentes ·",
+  sum(tabla$categoria == "buena"), "buenas ·",
+  sum(tabla$categoria == "regular"), "regulares ·",
+  sum(tabla$categoria == "servicio"), "coffee break\n"
+)
+cat("CSV:", csv_path, "\n")
+```
+
+## 3. Café e insumos (tu rubro)
+
+Estas son las que más se parecen a grano, molido o insumos de cafetería.
+
+```{r tabla-producto}
+insumos <- subset(tabla, categoria %in% c("excelente", "buena", "regular"))
+insumos <- insumos[order(match(insumos$categoria, c("excelente", "buena", "regular")), -insumos$puntaje), ]
+knitr::kable(
+  insumos[, c("categoria", "puntaje", "codigo", "nombre", "organismo", "region", "fecha_cierre", "monto")],
+  col.names = c("Encaje", "Pts", "Código", "Nombre", "Organismo", "Región", "Cierre", "Monto CLP"),
+  format.args = list(big.mark = ".", decimal.mark = ","),
+  caption = "Compra de café e insumos — CRL Coffee"
+)
+```
+
+## 4. Coffee break (servicio)
+
+No es venta de grano: es catering. Queda aparte por si te interesa el canal.
+
+```{r tabla-servicio}
+servicios <- subset(tabla, categoria == "servicio")
+knitr::kable(
+  servicios[, c("codigo", "nombre", "organismo", "fecha_cierre", "monto")],
+  col.names = c("Código", "Nombre", "Organismo", "Cierre", "Monto CLP"),
+  format.args = list(big.mark = ".", decimal.mark = ","),
+  caption = "Servicios de coffee break / cafetería"
+)
+```
+
+## Cómo cotizar
+
+1. Copia el **código** (ej. `1211992-225-COT26`).
+2. Búscalo en Mercado Público e ingresa como proveedor.
+3. En Compra Ágil el plazo suele ser 24–48 horas: corre el notebook en la mañana.
+
+Fuente: Dirección ChileCompra / Mercado Público.

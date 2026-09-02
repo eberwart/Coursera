@@ -39,14 +39,38 @@ Guárdalo. No lo subas a GitHub ni lo pegues en el código.
 
 ## 2. Corre hoy mismo en tu computador
 
-Necesitas Python 3.10 o superior (viene en macOS y en Ubuntu).
+### En Python
+
+Necesitas Python 3.10 o superior.
 
 ```bash
 export MERCADO_PUBLICO_TICKET='pega-aqui-tu-ticket'
 python3 -m crl_ofertas --salida reportes
 ```
 
-Se generan:
+### En R (notebook diario)
+
+Hay tres formas, todas usan el mismo código (`r/crl_ofertas.R`):
+
+1. **RStudio:** abre `ofertas-diarias.Rmd` y haz *Knit* (o ejecuta todos los chunks).
+2. **Jupyter / Cursor:** abre `ofertas-diarias.ipynb` (kernel R / IRkernel) y Run All.
+3. **Consola:**
+
+```r
+install.packages(c("httr", "jsonlite", "rmarkdown"))
+Sys.setenv(MERCADO_PUBLICO_TICKET = "pega-aqui-tu-ticket")
+rmarkdown::render("ofertas-diarias.Rmd")
+```
+
+Sin Knit, desde la consola:
+
+```bash
+MERCADO_PUBLICO_TICKET='pega-aqui-tu-ticket' Rscript ofertas-diarias.R
+```
+
+Las tablas salen en el HTML del notebook y en `reportes/ofertas-hoy.csv`.
+
+Se generan (Python o R):
 
 - `reportes/ofertas-hoy.html` — ábrelo en el navegador
 - `reportes/ofertas-hoy.json` — para Excel u otras herramientas
@@ -96,6 +120,7 @@ CRL Coffee ya ofrece venta mayorista a cafeterías, oficinas y gastronomía. Las
 
 ```bash
 python3 -m unittest discover -s tests -v
+Rscript tests/test_crl_ofertas.R
 ```
 
 Fuente de los datos: Dirección ChileCompra / Mercado Público. El ticket tiene un tope diario de consultas; este programa reutiliza búsquedas y solo pide el detalle de las fichas que ya parecen de café.
