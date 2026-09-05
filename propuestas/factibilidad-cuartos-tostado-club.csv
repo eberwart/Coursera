@@ -1,0 +1,37 @@
+﻿Coffee Roasting Labs — Factibilidad cuartos Tostado Club
+Todos los precios son NETOS (sin IVA). IVA 19%.
+
+PARAMETROS
+Kg café verde;1000
+Merma tostado;18%
+Peso cuarto (g);250
+Precio verde $/kg;9990
+Maquila $/kg (sobre verde);1500
+Bolsa $/un;300
+Etiqueta $/un;80
+Venta cuarto $/un;6000
+
+CONVERSION
+Kg tostados;820.0000000000001
+Cuartos;3280
+Bolsas a comprar;3346
+
+COSTOS NETOS DEL LOTE
+Café verde;9990000
+Maquila;1500000
+Bolsas;1003800
+Etiquetas;267680
+TOTAL COSTO;12761480
+Venta neta;19680000
+Utilidad neta;6918520
+Margen;35.2%
+Costo por cuarto;3890.7
+Caja a desembolsar c/IVA;15186161
+
+ESCENARIOS PRECIO VERDE
+Precio verde $/kg;Costo lote;Utilidad lote;Margen;Costo/cuarto
+9000;11771480;7908520;40.2%;3588.87
+9500;12271480;7408520;37.6%;3741.3
+9990;12761480;6918520;35.2%;3890.7
+10000;12771480;6908520;35.1%;3893.74
+10500;13271480;6408520;32.6%;4046.18
