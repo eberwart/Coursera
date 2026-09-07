@@ -1,0 +1,44 @@
+name: Ofertas diarias CRL Coffee
+
+on:
+  schedule:
+    # 08:00 hora de Chile en invierno (UTC-4)
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  extraer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Extraer ofertas de Mercado Público
+        env:
+          MERCADO_PUBLICO_TICKET: ${{ secrets.MERCADO_PUBLICO_TICKET }}
+        run: |
+          if [ -z "$MERCADO_PUBLICO_TICKET" ]; then
+            echo "Falta el secreto MERCADO_PUBLICO_TICKET."
+            echo "Pídelo en https://www.chilecompra.cl/api/ con Clave Única y agrégalo en Settings → Secrets."
+            exit 1
+          fi
+          python3 -m crl_ofertas --salida reportes
+      - name: Publicar HTML del día
+        uses: actions/upload-artifact@v4
+        with:
+          name: ofertas-crl-coffee
+          path: reportes/
+      - name: Guardar reporte en el repositorio
+        run: |
+          git config user.name "crl-ofertas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reportes
+          if git diff --cached --quiet; then
+            echo "Sin cambios en reportes/"
+          else
+            git commit -m "chore: actualizar ofertas de Mercado Público"
+            git push
+          fi

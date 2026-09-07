@@ -1,0 +1,1699 @@
+{
+  "fecha": "2026-09-07",
+  "fuente": "Dirección ChileCompra / Mercado Público",
+  "rubro": "Café de especialidad en grano — Coffee Roasting Labs (CRL Coffee)",
+  "resumen": {
+    "total": 68,
+    "excelente": 2,
+    "buena": 4,
+    "regular": 3,
+    "servicio": 50,
+    "descartada": 9
+  },
+  "ofertas": [
+    {
+      "fuente": "compra_agil",
+      "codigo": "5621-311-COT26",
+      "nombre": " Café en grano tostado",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 09:00",
+      "fecha_publicacion": "2026-09-07 17:23",
+      "monto": 1000000.0,
+      "moneda": "CLP",
+      "puntaje": 100,
+      "categoria": "excelente",
+      "razones": [
+        "Ítem UNSPSC 50201706 (Café)",
+        "Pide café en grano o de especialidad",
+        "Menciona café tostado",
+        "Encaja con suministro de café (tu rubro)"
+      ],
+      "productos": [
+        {
+          "codigo": "50201706",
+          "nombre": "Café",
+          "descripcion": "café",
+          "cantidad": 18.0,
+          "unidad": "KGM"
+        }
+      ],
+      "descripcion": "La Facultad de Derecho de la Universidad de Chile requiere la adquisición de 18 kilos de café conforme a los términos de referencia adjunto. El proveedor debe ofertar en el formato que tenga disponible para completar los kilos de café solicitado.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5621-311-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "578459-733-COT26",
+      "nombre": "IINSUMOS DE CAFETERIA- MEMO 352-4/26-PROGRAMA SALUD FAMILIAR- PAULINA HERMOSILLA-CESFAM ISLA DE MAIPO",
+      "estado": "Publicada",
+      "organismo": "CORP MUNICIPAL DE ISLA DE MAIPO PARA L",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 12:00",
+      "fecha_publicacion": "2026-09-07 17:36",
+      "monto": 200000.0,
+      "moneda": "CLP",
+      "puntaje": 100,
+      "categoria": "excelente",
+      "razones": [
+        "Ítem UNSPSC 50201706 (Café)",
+        "Pide café en grano o de especialidad",
+        "Pide café instantáneo o tipo Nescafé (equivalente posible, no es tu fuerte)",
+        "Encaja con suministro de café (tu rubro)"
+      ],
+      "productos": [
+        {
+          "codigo": "50201706",
+          "nombre": "Café",
+          "descripcion": "CAFE INSTANTANEO 170 GRAMOS",
+          "cantidad": 5.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "50201713",
+          "nombre": "Bolsitas de te",
+          "descripcion": "CAJA DE TE EN BOLSAS",
+          "cantidad": 5.0,
+          "unidad": "BX"
+        },
+        {
+          "codigo": "50202301",
+          "nombre": "Agua",
+          "descripcion": "AGUA SABORIZADA SABORES VARIADOS  2LTS",
+          "cantidad": 10.0,
+          "unidad": "BO"
+        },
+        {
+          "codigo": "50202304",
+          "nombre": "Jugos y néctar envasados",
+          "descripcion": "BOTELLAS DE JUGOS 2 LTS SABORES VARIADOS",
+          "cantidad": 10.0,
+          "unidad": "BO"
+        },
+        {
+          "codigo": "50221101",
+          "nombre": "Granos de Cereales",
+          "descripcion": "BARRAS DE CEREAL DE SABORES ( CAJA)",
+          "cantidad": 20.0,
+          "unidad": "BX"
+        }
+      ],
+      "descripcion": "FAVOR ADJUNTAR IMAGEN Y DESCRIPCION DE PRODUCTO OFERTADO EN COTIZACIONES",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=578459-733-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "613925-15-COT26",
+      "nombre": "Servicio de Coffe para para 15 personas para el Consejo Regional de Los Ríos. Los Robles #04 (Interior), Isla Teja, Valdivia. 10.09.2026 a las 10.30 AM a 12.30 PM",
+      "estado": "Publicada",
+      "organismo": "SUBSECRETARIA DEL MEDIO AMBIENTE",
+      "region": "Región de Los Ríos",
+      "comuna": "",
+      "fecha_cierre": "2026-09-11 02:19",
+      "fecha_publicacion": "2026-09-03 17:40",
+      "monto": 120000.0,
+      "moneda": "CLP",
+      "puntaje": 57,
+      "categoria": "buena",
+      "razones": [
+        "Pide café en grano o de especialidad",
+        "Habla de origen, arábica o especialidad",
+        "Encaja con suministro de café (tu rubro)"
+      ],
+      "productos": [
+        {
+          "codigo": "85151703",
+          "nombre": "Valoración de necesidades de alimentación de emergencia",
+          "descripcion": "?\tTe y Café de grano.\n?\tAgua.\n?\tJugo\n?\tFruta\n?\tGalletas (5 por persona).\n?\tTapaditos o dulces (3 por persona si son pequeños y 2 por persona si son medianos)\n?\tComestibles, sean mayoritariamente de origen vegetariano y/o de proveedor local; y con ello disminuir huella de carbono de la Subsecretaria del Medio Ambiente.\n?\tPersonal para atender el servicio. \n?\tMantelería.\n?\tVajilla, para la vajilla no podrá utilizar plásticos de un solo uso, como bombillas, platos o servicios, entre otros.\n?\tEl ofe",
+          "cantidad": 1.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "?\tTe y Café de grano.\n?\tAgua.\n?\tJugo\n?\tFruta\n?\tGalletas (5 por persona).\n?\tTapaditos o dulces (3 por persona si son pequeños y 2 por persona si son medianos)\n?\tComestibles, sean mayoritariamente de origen vegetariano y/o de proveedor local; y con ello disminuir huella de carbono de la Subsecretaria del Medio Ambiente.\n?\tPersonal para atender el servicio. \n?\tMantelería.\n?\tVajilla, para la vajilla no podrá utilizar plásticos de un solo uso, como bombillas, platos o servicios, entre otros.\n?\tEl ofe",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=613925-15-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1758-176-COT26",
+      "nombre": "SERVICIOS DE CAFETERIA Y ALIEMTNACION JORNADA DE HERRAMIENTAS DE GESTION POR LAS COMUNIDADES EDUCATIVAS EN PUERTO GUADAL",
+      "estado": "Publicada",
+      "organismo": "SECRETARIA REGIONAL MINISTERIAL DE EDUCACION XI REGION",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:00",
+      "fecha_publicacion": "2026-09-03 09:59",
+      "monto": 608000.0,
+      "moneda": "CLP",
+      "puntaje": 55,
+      "categoria": "buena",
+      "razones": [
+        "Pide café en grano o de especialidad",
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "20 SERVICIOS DE CAFETERIA SALUDABLE EL 23 DE SEPTIEMBRE SERVIDO A LAS 10:00 HRS ESCUELA BASICA DE PUERTO GUADAL. \n30 SERVICIOS DE CAFETERIA SALUDABLE EL 23 DE SEPTIEMBRE SERVIDO A LAS 16:30 HRS ESCUELA BASICA DE PUERTO GUADAL. CONTAR CON MANTELERIA, LOZA, MONTAJE Y RETIRO DE RESIDUOS AL TERMINO DE LA JORNADA.",
+          "cantidad": 50.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "90101501",
+          "nombre": "Restaurantes",
+          "descripcion": "06 ALMUERZOS SERVIDO A PARTIR DE LAS 13:30 HRS. DEL DÍA 23/09/2026. SERVICIOS DEBEN SER OFRECIDOS EN PUERTO GUADAL CON LOCAL DISPUESTO POR EL PROVEEDOR (INDICAR DIRECCIÓN), DE PREFERENCIA CENTRICO CERCANO AL LUGAR JORNADA EN ESCUELA BASICA DE PUERTO GUADAL, EL SERVICIO DEBE CONSIDERAR A LO MENOS: PLATO DE FONDO CON ALTERNATIVA DE PROTEÍNA Y ACOMPAÑAMIENTO, ENSALADA Y/O ENTRADA, POSTRE Y BEBESTIBLE NO ALCOHOLICO CONSIDERANDO CON OPCION VEGETARIANA. COMPOSTABLE.",
+          "cantidad": 6.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "SERVICIOS DE CAFETERÍAS MAÑANA Y TARDE Y ALIMENTACION (ALMUERZOS) PARA EL DÍA 23/09/2026 EN DEPENDENCIAS ESCUELA DE PUERTO GUADAL Y LUGAR POR CONFIRMAR. EL SERVICIO DEBE SER DE TIPO SALUDABLE Y CONSIDERAR POR PERSONA A LO MENOS JUGO NATURAL, TÉ, CAFÉ DE GRANO,LECHE PARA CORTAR, CHOCOLATE CALIENTE, FRUTA NATURAL, FRUTOS SECOS, 02 MINI SANDWICH O ALTERNATIVA SALADA, 02 ALTERNATIVAS DULCES DULCES,U OTRA SUGERENCIA DEL PROVEEDOR PLAN DE RESIDUOS, COMPOSTABLE. COORDINADOR A CARGO SRTA. LORENA ZAPATA.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1758-176-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1758-175-COT26",
+      "nombre": "SERVICIOS DE CAFETERIA Y ALIEMTNACION JORNADA DE HERRAMIENTAS DE GESTION POR LAS COMUNIDADES EDUCATIVAS EN COCHRANE",
+      "estado": "Publicada",
+      "organismo": "SECRETARIA REGIONAL MINISTERIAL DE EDUCACION XI REGION",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:00",
+      "fecha_publicacion": "2026-09-03 09:44",
+      "monto": 608000.0,
+      "moneda": "CLP",
+      "puntaje": 55,
+      "categoria": "buena",
+      "razones": [
+        "Pide café en grano o de especialidad",
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "30 SERVICIOS DE CAFETERIA SALUDABLE EL 22 DE SEPTIEMBRE SERVIDO A LAS 10:00 HRS ESCUELA BASICA DE COCHRANE.\n20 SERVICIOS DE CAFETERIA SALUDABLE EL 22 DE SEPTIEMBRE SERVIDO A LAS 16:30 HRS ESCUELA BASICA DE COCHRANE.\nCONTAR CON MANTELERIA, LOZA, MONTAJE Y RETIRO DE RESIDUOS AL TERMINO DE LA JORNADA.\n",
+          "cantidad": 50.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "90101501",
+          "nombre": "Restaurantes",
+          "descripcion": "06 ALMUERZOS SERVIDO A PARTIR DE LAS 13:00 HRS. DEL DÍA 22/09/2026. SERVICIOS DEBEN SER OFRECIDOS EN COCHRANE CON LOCAL DISPUESTO POR EL PROVEEDOR (INDICAR DIRECCIÓN), DE PREFERENCIA CENTRICO CERCANO AL LUGAR JORNADA EN ESCUELA BASICA DE COCHRANE, EL SERVICIO DEBE CONSIDERAR A LO MENOS: PLATO DE FONDO CON ALTERNATIVA DE PROTEÍNA Y ACOMPAÑAMIENTO, ENSALADA Y/O ENTRADA, POSTRE Y BEBESTIBLE NO ALCOHOLICO CONSIDERANDO CON OPCION VEGETARIANA. COMPOSTABLE.",
+          "cantidad": 6.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "SERVICIO DE CAFETERÍAS MAÑANA Y TARDE Y ALIMENTACION (ALMUERZOS) PARA EL DÍA 22/09/2026 EN DEPENDENCIAS DE LA ESCUELA DE COCHRANE Y LUGAR POR CONFIRMAR. EL SERVICIO DEBE SER DE TIPO SALUDABLE Y CONSIDERAR POR PERSONA A LO MENOS JUGO NATURAL, TÉ, CAFÉ DE GRANO,LECHE PARA CORTAR, CHOCOLATE CALIENTE, FRUTA NATURAL, FRUTOS SECOS, 02 MINI SANDWICH O ALTERNATIVA SALADA, 02 ALTERNATIVAS DULCES DULCES,U OTRA SUGERENCIA DEL PROVEEDOR PLAN DE RESIDUOS, COMPOSTABLE.\nCOORDINADOR A CARGO SRTA. LORENA ZAPATA.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1758-175-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2202-333-COT26",
+      "nombre": "Servicio de Coffe para pertinencia cultural, Hospital de Curacautín.",
+      "estado": "Publicada",
+      "organismo": "SERVICIO SALUD ARAUCANIA NORTE HOSPITAL CURACAUTIN",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 10:00",
+      "fecha_publicacion": "2026-09-07 09:17",
+      "monto": 380000.0,
+      "moneda": "CLP",
+      "puntaje": 50,
+      "categoria": "buena",
+      "razones": [
+        "Ítem UNSPSC 50201706 (Café)",
+        "Encaja con suministro de café (tu rubro)"
+      ],
+      "productos": [
+        {
+          "codigo": "50131606",
+          "nombre": "Huevos frescos",
+          "descripcion": "Se requiere bocados fríos 2 catutos fritos con salsa, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 80.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50131606",
+          "nombre": "Huevos frescos",
+          "descripcion": "Se requiere 40 huevo duro, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50181901",
+          "nombre": "Pan fresco",
+          "descripcion": "Se requiere tortilla (rescoldo, ceniza o manteca) tamaño individual 100 gramos, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192602",
+          "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+          "descripcion": "Se requiere pocillo de ceviche de quinoa tamaño individual (por persona, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "10101601",
+          "nombre": "Pollos",
+          "descripcion": "Se requiere 40 porciones de pollo de campo cocido equivalente a 100 gramos cada uno tamaño individual, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192602",
+          "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+          "descripcion": "Se requiere vaso de mote cocido de 150 gramos tamaño individual, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192602",
+          "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+          "descripcion": "Se requiere adquirir 5 fuentes de 300 gramos de pebre con merkén (para compartir) no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 5.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50202304",
+          "nombre": "Jugos y néctar envasados",
+          "descripcion": "Se requiere 40 vasos de jugo de 150 ml variedad de sabores (frutilla, naranja y piña) no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere bocados calientes brochetas de carne (2 por persona) no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 80.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere empanadas de pino horneadas tamaño coctel, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 80.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere empanadas de queso frita tamaño coctel, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere sopaipillas tradicionales tamaño coctel, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere mini kuchen tamaño individual con frutas de estación, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere pie de limón tamaño individual, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50192801",
+          "nombre": "Empanadas, tartas y pies frescos",
+          "descripcion": "Se requiere 1 torta de bizcocho manjar durazno para 40 personas, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 1.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "50201706",
+          "nombre": "Café",
+          "descripcion": "Se requiere 40 vasos de café de 120 ml de trigo tamaño individual, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+          "cantidad": 40.0,
+          "unidad": "GL"
+        }
+      ],
+      "descripcion": "Se requiere servicio de Coffe para pertinencia cultural según descripción, no se paga flete y/o despacho, solo se evaluarán ofertas que no excedan el presupuesto, en cotización adjuntar ficha técnica y/o imagen de los productos requeridos. Si el proveedor no adjunta ficha técnica y/o imagen o no indica el plazo de entrega se declarará inadmisible. A realizarse el día 09 de septiembre desde las 09:00 hasta 14:00 hrs en dependencias de biblioteca municipal de Curacautín Sala taller N°3.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2202-333-COT26",
+      "encaja_producto": true
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1057486-124-COT26",
+      "nombre": "Insumos de Cafetería",
+      "estado": "Publicada",
+      "organismo": "DIRECCION SERVICIO SALUD METROPOLITANO O",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 08:00",
+      "fecha_publicacion": "2026-08-24 13:01",
+      "monto": 257952.0,
+      "moneda": "CLP",
+      "puntaje": 18,
+      "categoria": "regular",
+      "razones": [
+        "Compra de café o insumos de cafetería"
+      ],
+      "productos": [
+        {
+          "codigo": "52151504",
+          "nombre": "Tazas o vasos desechables domésticos",
+          "descripcion": "Vaso biodegradable, para líquidos calientes 8 oz",
+          "cantidad": 6000.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "52151704",
+          "nombre": "Cucharas domésticas",
+          "descripcion": "Cuchara de madera chica, 11 cms (envasadas en paquetes de 100 unidades)",
+          "cantidad": 2000.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "52151502",
+          "nombre": "Platos desechables domésticos",
+          "descripcion": "Plato descartable de cartón de 17 cms (paquetes de 10 unidades)",
+          "cantidad": 600.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "Reposición de stock de bodega",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1057486-124-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2731-989-COT26",
+      "nombre": "SC. N°14.050-DIRECCIÓN DE DESARROLLO ECONÓMICO LOCAL-DIDEL-INSUMOS CAFETERÍA",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE PENAFLOR",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 09:49",
+      "fecha_publicacion": "2026-09-03 17:05",
+      "monto": 242000.0,
+      "moneda": "CLP",
+      "puntaje": 18,
+      "categoria": "regular",
+      "razones": [
+        "Compra de café o insumos de cafetería"
+      ],
+      "productos": [
+        {
+          "codigo": "50161814",
+          "nombre": "Dulces con azúcar o sustitutos",
+          "descripcion": "° ARTÍCULOS DE CONFITERÍA, según Especificaciones Técnicas descritas en el ANEXO N°1 ADJUNTO.",
+          "cantidad": 1.0,
+          "unidad": "GL"
+        }
+      ],
+      "descripcion": "1. INSUMOS DE CAFETERÍA: No serán consideradas las Cotizaciones que no cumplan con las características Técnicas requeridas y no Coticen la totalidad de los Servicios. Deberá adjuntar el Anexo N°1 y/o Cotización en formato propio que contenga toda la información requerida de los Productos Requeridos, e incluido el FLETE. caso contrario su oferta no será considerada válida. El plazo de entrega de los Productos deberá ser de 1 día hábil, una vez enviada la Orden de Compra.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2731-989-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "578459-739-COT26",
+      "nombre": "INSUMOS DE CAFETERIA- MEMO 368-5/26-PROGRAMA SALUD FAMILIAR- PAULINA HERMOSILLA- SAN VICENTE DE NALTAGUA",
+      "estado": "Publicada",
+      "organismo": "CORP MUNICIPAL DE ISLA DE MAIPO PARA L",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 12:00",
+      "fecha_publicacion": "2026-09-07 18:09",
+      "monto": 150000.0,
+      "moneda": "CLP",
+      "puntaje": 18,
+      "categoria": "regular",
+      "razones": [
+        "Compra de café o insumos de cafetería"
+      ],
+      "productos": [
+        {
+          "codigo": "50181905",
+          "nombre": "Galletas dulces o pastelitos",
+          "descripcion": "GALLETAS DE AVENA DE DISTINTOS SABORES X 162 GRS",
+          "cantidad": 20.0,
+          "unidad": "EA"
+        },
+        {
+          "codigo": "50202301",
+          "nombre": "Agua",
+          "descripcion": "AGUA CON SABOR DE 2 LTS",
+          "cantidad": 20.0,
+          "unidad": "AMP"
+        },
+        {
+          "codigo": "50221202",
+          "nombre": "Cereales en barra",
+          "descripcion": "BARRAS DE CEREAL ( 8 BARRITAS EN CADA CAJA DE 144 GRAMOS)",
+          "cantidad": 15.0,
+          "unidad": "BX"
+        },
+        {
+          "codigo": "50192110",
+          "nombre": "Nueces o frutos secos",
+          "descripcion": "PAQUETES DE MANI  140 GRMS",
+          "cantidad": 10.0,
+          "unidad": "PK"
+        }
+      ],
+      "descripcion": "FAVOR ADJUNTAR IMAGEN Y DESCRIPCION DE PRODUCTO OFERTADO EN COTIZACIONES",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=578459-739-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "5251-886-COT26",
+      "nombre": "SERVICIO DE ARRIENDO SALON Y PATIO AL AIRE LIBRE PARA TALLER DE CAPACITACIÓN, Y COFFE, COMUNA MELIPILLA",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD TECNOLOGICA METROPOLITANA",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-07 21:00",
+      "fecha_publicacion": "2026-09-04 15:30",
+      "monto": 3984000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90111604",
+          "nombre": "Salones",
+          "descripcion": "Se solicita implementar el servicio de una sala y espacio de taller de capacitación, para 20 participantes durante 8 jornadas y debe contar con un espacio destinado a taller para trabajos prácticos, según las características metodológicas del curso de capacitación.",
+          "cantidad": 1.0,
+          "unidad": "GL"
+        },
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "servicio de Coffe break al inicio de la jornada de capacitación, para los participantes del curso por una cantidad total 176 distribuidos durante las 8 jornadas. DEBE ADJUNTAR RESOLUCIÓN SANITARIA. ",
+          "cantidad": 176.0,
+          "unidad": "000"
+        }
+      ],
+      "descripcion": "Se requiere el servicio de arriendo de sala, taller de paracitación y de coffee break, se adjunta especificaciones técnicas. Los oferentes deberán presentar una cotización detallada de los bienes ofertados, FICHA TÉCNICA, plazo de entrega, garantía y precio. Así mismo, debe presentar los anexos adjuntos completados (OBLIGATORIO PARA LA ADMISIBILIDAD DE SU OFERTA).",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5251-886-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "5251-884-COT26",
+      "nombre": "SERVICIO ARRIENDO DE SALÓN Y SERVICIO DE COFFE – 8 JORNADAS - MELIPILLA",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD TECNOLOGICA METROPOLITANA",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 10:00",
+      "fecha_publicacion": "2026-09-04 10:42",
+      "monto": 3900000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "80131502",
+          "nombre": "Arriendo de instalaciones comerciales o industriales",
+          "descripcion": "*ADJUNTAR ANEXOS OBLIGATORIOS Y RES SANITARIA VIGENTE PARA ADMISIBILIDAD DE LA OFERTA*\nSe requiere arriendo de Salón en comuna de Melipilla para 8 JORNADAS. SE DEBE OFERTAR VALOR POR SALA. El salón deberá contar con: -\nSillas para 20 participantes y con mesa de apoyo para escribir.\nMesa y silla para el relator.\nPizarra.\nProyector.\nTelón de 2.7 x 3.0 mts.\nAire acondicionado.\nWifi.\nREVISAR ESPECIFICACIONES TÉCNICAS ADJUNTAS.",
+          "cantidad": 8.0,
+          "unidad": "DAY"
+        },
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "*ADJUNTAR ANEXOS OBLIGATORIOS Y RES SANITARIA VIGENTE PARA ADMISIBILIDAD DE LA OFERTA*\nSe requiere servicio de coffe para 176 asistentes distribuidos en 8 jornadas a definir con Unidad Técnica semana a semana.\nEl servicio deberá contar con:\nEstación de cafetería \nSandwiches\nBocados dulces\nREVISAR ESPECIFICACIONES TÉCNICAS ADJUNTAS.",
+          "cantidad": 176.0,
+          "unidad": "000"
+        }
+      ],
+      "descripcion": "Los oferentes deberán ofertar según lo requerido en las presentes especificaciones técnicas. Para que la oferta sea declarada admisible deberán adjuntar:\nRequisitos de admisibilidad de la oferta\nCotización formal, los valores deben considerar todo gasto referente a la compra.\nAnexos OBLIGATORIOS debidamente completados y firmados.\nFicha técnica del producto/servicio\nRESOLUCIÓN SANITARIA VIGENTE",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5251-884-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2598-164-COT26",
+      "nombre": "SERVICIO DE COFFE PARA INAUGURACION DE MAMOGRAFO COMUNAL",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE CONCON",
+      "region": "Región de Valparaíso ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:00",
+      "fecha_publicacion": "2026-09-07 14:45",
+      "monto": 1200000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "SERVICIO DE COFFE PARA 200 PERSONAS PARA INAUGURACION DEL MAMOGRAFO MUNICIPAL PERTENECIENTE A LA UNIDAD DE IMAGENOLOGIA DEL CESFAM SAR CONCON, SEGUN ESPECIFICACIONES TECNICAS ADJUNTAS. SERVICIO A REALIZAR EL DIA JUEVES 10 DE SEPTIEMBRE 2026.",
+          "cantidad": 1.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "Se requiere adquirir servicio de coffe para inauguracion mamografo del CESFAM de Concón.\nMonto total disponible $ 1.200.000.- (con impuesto incluido).\nIndicar plazo de entrega, ficha técnica o imagen referencial del producto.\nAjustar oferta a especificaciones técnicas adjuntas.\n(INDICAR NÚMERO DE CONTACTO PARA PODER HACER SEGUIMIENTO AL PEDIDO UNA VEZ GENERADA O.C)\n",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2598-164-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2416-251-COT26",
+      "nombre": "SERVICIO DE SUMINISTRO DE ALIMENTACIÓN TIPO COFFE/ DIDECO / MEMO N°537 ",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE CONCEPCION",
+      "region": "Región del Biobío ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:40",
+      "fecha_publicacion": "2026-09-07 15:32",
+      "monto": 7000000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "SE REQUIERE COTIZAR SERVICIO DE ALIMENTACION INDICAR VALOR UNITARIO POR PERSONA, SE SOLICITARÁ SERVICIO DESDE 15 PERSONAS COMO MÍNIMO,SE ADJUNTA REQUERIMIENTO, ADJUNTAR COTIZACIÓN CON ESPECIFICACIONES TÉCNICAS",
+          "cantidad": 1.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "SE REQUIERE COTIZAR SERVICIO DE ALIMENTACION INDICAR VALOR UNITARIO POR PERSONA, SE SOLICITARÁ SERVICIO DESDE 15 PERSONAS COMO MÍNIMO,SE ADJUNTA REQUERIMIENTO, ADJUNTAR COTIZACIÓN CON ESPECIFICACIONES TÉCNICAS",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2416-251-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3485-838-COT26",
+      "nombre": "SERVICIO DE COFFE",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE NUEVA IMPERIAL",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 17:00",
+      "fecha_publicacion": "2026-09-07 16:50",
+      "monto": 300000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "Servicio de Catering para 50 personas consistente en:\n- 50 tapaditos churrasco lomito Temuco lechuga\n- 100 crostinni champiñón jamon serrano y Cherry\n- 50 empanaditas de horno pino \n- 50 brochetas de pollo cerdo\n- 25 brochetas saladas de verduras tomate Cherry, aceitunas,queso\n- 50 mini brazo de reina frambuesas\n- 50 mini torta de hojarascas manjar y merengue\n- 50 jugos variedad de sabores.",
+          "cantidad": 1.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "SERVICIO DE COFFE PARA ACTIVIDAD ORGANIZADA POR EL DEPARTAMENTO DE CULTURA EL DIA 29 DE SEPTIEMBRE A LAS 11 HRS EN EL CENTRO CULTURAL.- (SP 1022)",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3485-838-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3904-811-COT26",
+      "nombre": "OP26-1230 Servicio de alimentación consistente en un Coffe para el día jueves 10 de Septiembre a las 8:30hr en Sala de Reuniones de la DDEL.",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE BULNES",
+      "region": "Región del Ñuble",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 18:45",
+      "fecha_publicacion": "2026-09-07 18:36",
+      "monto": 80000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "Servicio de alimentación Tipo Estación de Coffe para 10 personas, consistente en tapaditos de sandwuich, copa de jugo, café, te, con azucar y endulzantes, masas dulces (pie de limon, brownie, donas, cachitos o dulces chilenos). Dicho servicio debe estar instalado a las 8:30hr del día jueves 10 de septiembre de 2026 en la Sala de reuniones de la DDEL ubicada en calle Sta Maria N°368, Bulnes.",
+          "cantidad": 1.0,
+          "unidad": "EA"
+        }
+      ],
+      "descripcion": "OP26-1230 Servicio de alimentación consistente en un Coffe para el día jueves 10 de Septiembre a las 8:30hr en Sala de Reuniones de la DDEL.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3904-811-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "1057384-136-L126",
+      "nombre": "COFFE BREAK HOSPITAL TOCOPILLA",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ANTOFAGASTA HOSPITAL M",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "Las Condes",
+      "fecha_cierre": "2026-09-16T18:27:00",
+      "fecha_publicacion": "2026-09-07T16:48:37.657",
+      "monto": 200000.0,
+      "moneda": "CLP",
+      "puntaje": 26,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering",
+        "Código de servicio de cafetería/catering"
+      ],
+      "productos": [
+        {
+          "codigo": "90101603",
+          "nombre": "Servicios de catering",
+          "descripcion": "Contratación de servicio de Coffe Break para actividades de monitores comunitarios del Hospital Marcos Macuada de Tocopilla durante el año 2026.",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        }
+      ],
+      "descripcion": "servicio de Coffe Break para actividades de monitores comunitarios del Hospital Marcos Macuada de Tocopilla año 2026.\nSolicitud N°1257",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=1057384-136-L126",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "1237328-58-LE26",
+      "nombre": "Suministro Servicio Coffe Break APS",
+      "estado": "5",
+      "organismo": "",
+      "region": "",
+      "comuna": "",
+      "fecha_cierre": "2026-09-07T19:49:00",
+      "fecha_publicacion": "",
+      "monto": null,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=1237328-58-LE26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3778-231-COT26",
+      "nombre": "COFFE BREAK 2026000276",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE HIJUELAS",
+      "region": "Región de Valparaíso ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 09:00",
+      "fecha_publicacion": "2026-09-04 09:36",
+      "monto": 70000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3778-231-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1208106-31-COT26",
+      "nombre": "Servicios de Coffe Break y entrega de colaciones jornada para niños y niñas de la Dirección Regional de Los Ríos, entrega 23 de septiembre de 2026 en la ciudad de Valdivia",
+      "estado": "Publicada",
+      "organismo": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
+      "region": "Región de Los Ríos",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 10:00",
+      "fecha_publicacion": "2026-09-03 15:50",
+      "monto": 740000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1208106-31-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "5495-21-COT26",
+      "nombre": "Servicio de Coffee break para Magíster de la Facultad de Gobierno",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 12:00",
+      "fecha_publicacion": "2026-09-07 11:41",
+      "monto": 7000000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5495-21-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3884-483-COT26",
+      "nombre": "ADQUISICION DE SERVICIO DE COFFE BREAK QUE INCLUYA MANTELERIA Y VAJILLAS ",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD PAIHUANO",
+      "region": "Región de Coquimbo ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 13:30",
+      "fecha_publicacion": "2026-09-07 13:21",
+      "monto": 200000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3884-483-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1469-2868-COT26",
+      "nombre": "2000043642 Servicio de Cafetería 60 personas",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE TALCA",
+      "region": "Región del Maule ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 13:40",
+      "fecha_publicacion": "2026-09-07 13:29",
+      "monto": 400000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1469-2868-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "4291-1138-COT26",
+      "nombre": "COFFE BREAK (Lunes 5 Octubre 2026)",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE ANTOFAGASTA",
+      "region": "Región de Antofagasta ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 14:00",
+      "fecha_publicacion": "2026-09-07 12:35",
+      "monto": 1000000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=4291-1138-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "564162-878-COT26",
+      "nombre": " Coffe break",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 14:30",
+      "fecha_publicacion": "2026-09-07 14:26",
+      "monto": 600000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=564162-878-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3807-394-COT26",
+      "nombre": "COFFE BREAK - VINCULOS 2024-B",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE EMPEDRADO",
+      "region": "Región del Maule ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:00",
+      "fecha_publicacion": "2026-09-07 12:50",
+      "monto": 166600.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3807-394-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "5951-95-COT26",
+      "nombre": "Servicio de coffee break",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE TARAPACA",
+      "region": "Región de Arica y Parinacota",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 15:30",
+      "fecha_publicacion": "2026-09-07 14:42",
+      "monto": 750000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5951-95-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2568-59-COT26",
+      "nombre": "Servicio de Coffe Break Miércoles 09 y Jueves 10 en Machalí",
+      "estado": "Publicada",
+      "organismo": "CORP NACIONAL FORESTAL",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:00",
+      "fecha_publicacion": "2026-09-07 15:58",
+      "monto": 1000000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2568-59-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1182705-171-COT26",
+      "nombre": "SERVICIO DE COFFE BREAK PARA OBSERVATORIO LABORAL ",
+      "estado": "Publicada",
+      "organismo": "CENTRO DE FORMACIÓN TÉCNICA DE LA REGIÓN DE AYSÉN DEL GENERAL CARLOS I",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:00",
+      "fecha_publicacion": "2026-09-07 15:41",
+      "monto": 714000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1182705-171-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1175-306-COT26",
+      "nombre": "Servicio de coffe break para jornada territorial (Lautaro)",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:15",
+      "fecha_publicacion": "2026-09-07 16:12",
+      "monto": 105000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1175-306-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1175-307-COT26",
+      "nombre": "Servicio de coffe break para jornada territorial (Imperial)",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:30",
+      "fecha_publicacion": "2026-09-07 16:17",
+      "monto": 105000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1175-307-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1078326-9-COT26",
+      "nombre": "Servicios de Cafetería ",
+      "estado": "Publicada",
+      "organismo": "INSTITUTO ANTARTICO CHILENO",
+      "region": "Región de Magallanes y de la Antártica",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:30",
+      "fecha_publicacion": "2026-09-07 16:24",
+      "monto": 350000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [
+        {
+          "codigo": "30221003",
+          "nombre": "Cafetería",
+          "descripcion": "Servicio de Cafetería, según documento adjunto.",
+          "cantidad": 1.0,
+          "unidad": "GL"
+        }
+      ],
+      "descripcion": "Se requiere contratar un servicio de cafetería/coffee break con motivo del lanzamiento del libro “Antártica en Cifras 4: laboratorios naturales” , actividad que se realizará  el día miércoles 9 de septiembre de 2026, a las 15:30 horas, en el Auditorio Ernesto Livacic de la Universidad de Magallanes, Punta Arenas.",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1078326-9-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1738-341-COT26",
+      "nombre": "SERVICIO DE COFFE BREAK PARA 80 PERSONAS ESTILO BRUNCH PARA CAMPEONATO COMUNAL DE CUECA ESCOLAR",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE VILLA ALEGRE",
+      "region": "Región del Maule ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:35",
+      "fecha_publicacion": "2026-09-07 16:25",
+      "monto": 700000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1738-341-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1175-308-COT26",
+      "nombre": "Servicio de coffe break para jornada territorial (Temuco)",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ARAUCANIA SUR",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 16:40",
+      "fecha_publicacion": "2026-09-07 16:21",
+      "monto": 105000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1175-308-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1658-1311-COT26",
+      "nombre": "S5-26/DEPTO DE PROGRAMAS PARA LAS PERSONAS MAYORES/ADQ. COFFE BREAK PARA 60 PERSONAS.",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 17:30",
+      "fecha_publicacion": "2026-09-05 11:41",
+      "monto": 400000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1658-1311-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "5965-140-COT26",
+      "nombre": "Servicio de 4 Coffe Break para 30 personas, Postgrado Matemática.",
+      "estado": "Publicada",
+      "organismo": "UNIVERSIDAD DE TARAPACA",
+      "region": "Región de Arica y Parinacota",
+      "comuna": "",
+      "fecha_cierre": "2026-09-08 17:50",
+      "fecha_publicacion": "2026-09-07 17:45",
+      "monto": 500000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=5965-140-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3181-368-COT26",
+      "nombre": "SERVICIO DE COFFEE BREAK PARA INAGURACIÓN DE PROYECTO DE CÁMARAS DE PROTECCIÓN, SOLICITADO POR SEGURIDAD PÚBLICA.",
+      "estado": "Publicada",
+      "organismo": "ILUSTRE MUNICIPALIDAD DE MACHALI",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 09:00",
+      "fecha_publicacion": "2026-09-07 15:20",
+      "monto": 497000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3181-368-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2608-54-COT26",
+      "nombre": "ADQUISICION DE COFFE BREAK, APOYO JORNADA PLAN REGIONAL ETE PROGRAMADO PARA EL DIA 29 DE SEPTIEMBRE 2026 ",
+      "estado": "Publicada",
+      "organismo": "Departamento Provincial de Educación Huasco",
+      "region": "Región de Atacama ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 09:00",
+      "fecha_publicacion": "2026-09-07 17:12",
+      "monto": 450000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2608-54-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1057390-219-COT26",
+      "nombre": "Insumos de Coffe Break DSSAN",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ARAUCANIA NORTE",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 09:00",
+      "fecha_publicacion": "2026-09-07 11:45",
+      "monto": 2000000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1057390-219-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1218392-97-COT26",
+      "nombre": "INSUMOS PARA COFFE BREAK- DÍA DEL TURISMO",
+      "estado": "Publicada",
+      "organismo": "CORPORACION MUNICIPAL DE CULTURA Y TURISMO DE LA COMUNA DE QUINTERO",
+      "region": "Región de Valparaíso ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 09:30",
+      "fecha_publicacion": "2026-09-07 17:06",
+      "monto": 250000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1218392-97-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "4306-398-COT26",
+      "nombre": "SERVICIO COFFE BREAK Y ALMUERZOS PARA ACTIVIDAD TRAFKINTU, USUARIOS PPL, PAILAHUEQIE ERCILLA.-",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE ERCILLA",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 11:00",
+      "fecha_publicacion": "2026-09-07 17:16",
+      "monto": 2175000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=4306-398-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "696011-58-COT26",
+      "nombre": "Servicio de Cafetería",
+      "estado": "Publicada",
+      "organismo": "MINISTERIO PUBLICO",
+      "region": "Región de Atacama ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 16:30",
+      "fecha_publicacion": "2026-09-07 11:14",
+      "monto": 325000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=696011-58-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1658-1305-COT26",
+      "nombre": "S6-26/ DIRECCION DE PERSONAS MAYORES/ ADQ. SERVICIO COFFE BREAK",
+      "estado": "Publicada",
+      "organismo": "I MUNICIPALIDAD DE TEMUCO",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-09 17:00",
+      "fecha_publicacion": "2026-09-04 11:37",
+      "monto": 750000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1658-1305-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "3780-191-COT26",
+      "nombre": "Coffe Break, Sol. N° 218, Jaime Rojas - Gabriel Valenzuela.",
+      "estado": "Publicada",
+      "organismo": "Municipalidad de Yerbas Buenas-Depto. Salud",
+      "region": "Región del Maule ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 09:00",
+      "fecha_publicacion": "2026-09-07 16:04",
+      "monto": 300000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=3780-191-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2982-68-COT26",
+      "nombre": "SERVICIOS DE COFFE BREAK  CORRIDA PDI 2026 -DEFIS",
+      "estado": "Publicada",
+      "organismo": "POLICIA DE INVESTIGACIONES DE CHILE",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 09:00",
+      "fecha_publicacion": "2026-09-07 15:39",
+      "monto": 650000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2982-68-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1183926-188-COT26",
+      "nombre": "Servicio de alimentacion(coffe, brunch, catering y otros)",
+      "estado": "Publicada",
+      "organismo": "CENTRO DE FORMACIÓN TÉCNICA ESTATAL DE LA REGIÓN D",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 09:40",
+      "fecha_publicacion": "2026-09-04 14:36",
+      "monto": 1000000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1183926-188-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "2031-53-COT26",
+      "nombre": "COFFE BREAK JORNADA CIERRE PROGRAMA TALENTO ACADEMICO 14 DE NOVIEMBRE",
+      "estado": "Publicada",
+      "organismo": "Departamento Provincial de Educación Antofagasta",
+      "region": "Región de Antofagasta ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 10:00",
+      "fecha_publicacion": "2026-09-07 16:29",
+      "monto": 1800000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=2031-53-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "918434-230-COT26",
+      "nombre": "D4354 Adquisición de Servicio de Cafetería; Diálogo participativo sobre la Agenda Regional de Igualdad de Derechos y Equidad de Género 2026- 2030, Seremi de Aysen",
+      "estado": "Publicada",
+      "organismo": "MINISTERIO DE LA MUJER Y LA EQUIDAD DE GÉNERO",
+      "region": "Región Aysén del General Carlos Ibáñez del Campo",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 10:30",
+      "fecha_publicacion": "2026-09-03 10:50",
+      "monto": 150000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=918434-230-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "895072-114-COT26",
+      "nombre": " Servicio de Cafetería - Jornada Macrozonal  Sur y Grupos Focales DPE - Temuco",
+      "estado": "Publicada",
+      "organismo": "SUBSECRETARIA DE EDUCACION PARVULARIA",
+      "region": "Región de la Araucanía ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 12:12",
+      "fecha_publicacion": "2026-09-07 17:41",
+      "monto": 450000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=895072-114-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "895072-113-COT26",
+      "nombre": " Servicio de Cafetería - Jornada Macrozonal Austral y Grupos Focales DPE - Punta Arenas",
+      "estado": "Publicada",
+      "organismo": "SUBSECRETARIA DE EDUCACION PARVULARIA",
+      "region": "Región de Magallanes y de la Antártica",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 12:12",
+      "fecha_publicacion": "2026-09-07 17:31",
+      "monto": 800000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=895072-113-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "895072-112-COT26",
+      "nombre": " Servicio de Cafetería - Jornada Macrozonal Centro y Grupos Focales DPE - Rancagua",
+      "estado": "Publicada",
+      "organismo": "SUBSECRETARIA DE EDUCACION PARVULARIA",
+      "region": "Región del Libertador General Bernardo O´Higgins",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 12:12",
+      "fecha_publicacion": "2026-09-07 17:18",
+      "monto": 450000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=895072-112-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "895072-111-COT26",
+      "nombre": "Servicio de Cafetería - Jornada Macrozonal Norte - Iquique - Grupos Focales DPE",
+      "estado": "Publicada",
+      "organismo": "SUBSECRETARIA DE EDUCACION PARVULARIA",
+      "region": "Región de Tarapacá  ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 12:12",
+      "fecha_publicacion": "2026-09-07 17:04",
+      "monto": 800000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=895072-111-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "622-111-COT26",
+      "nombre": "Contratación de servicio de café para “Seminario para Fiscalizadores”.",
+      "estado": "Publicada",
+      "organismo": "TESORERIA GENERAL DE LA REPUBLICA",
+      "region": "Región Metropolitana de Santiago",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10 15:00",
+      "fecha_publicacion": "2026-09-03 12:37",
+      "monto": 800000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=622-111-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "2704-65-LE26",
+      "nombre": "SERVICIOS DE COFFEE BREAK  SC 128",
+      "estado": "5",
+      "organismo": "",
+      "region": "",
+      "comuna": "",
+      "fecha_cierre": "2026-09-10T18:00:00",
+      "fecha_publicacion": "",
+      "monto": null,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=2704-65-LE26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1558-285-COT26",
+      "nombre": "Servicio de coffe break",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ATACAMA HOSPITAL FLORENCIO VARGAS DIAZ",
+      "region": "Región de Atacama ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-11 11:13",
+      "fecha_publicacion": "2026-09-03 12:46",
+      "monto": 380000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1558-285-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "1558-284-COT26",
+      "nombre": "Servicio de coffe break",
+      "estado": "Publicada",
+      "organismo": "SERVICIO DE SALUD ATACAMA HOSPITAL FLORENCIO VARGAS DIAZ",
+      "region": "Región de Atacama ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-11 11:22",
+      "fecha_publicacion": "2026-09-03 12:37",
+      "monto": 280000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=1558-284-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "compra_agil",
+      "codigo": "792905-12-COT26",
+      "nombre": "Coffee break jornada educación parvularia",
+      "estado": "Publicada",
+      "organismo": "SUPERINTENDENCIA DE EDUCACION ESCOLAR",
+      "region": "Región del Maule ",
+      "comuna": "",
+      "fecha_cierre": "2026-09-11 13:00",
+      "fecha_publicacion": "2026-09-07 12:35",
+      "monto": 400000.0,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Home/Search?k=792905-12-COT26",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "4284-146-L126",
+      "nombre": "Adquisición de materiales de oficina alimentos merchandising galvanos y contratación servicio de alimentación Coffe break para actividades programas 4 a 7 mujeres jefas de hogar Cultura de la mujer y OMIL según NUMERAL 5 B.A.G Bases administrativas",
+      "estado": "5",
+      "organismo": "",
+      "region": "",
+      "comuna": "",
+      "fecha_cierre": "2026-09-11T13:20:00",
+      "fecha_publicacion": "",
+      "monto": null,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=4284-146-L126",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "900-36-L126",
+      "nombre": "HDS - SERVICIO DE COFFE BREAK PARA 4 CURSOS, UNIDAD DE CAPACITACIONES",
+      "estado": "5",
+      "organismo": "",
+      "region": "",
+      "comuna": "",
+      "fecha_cierre": "2026-09-14T15:00:00",
+      "fecha_publicacion": "",
+      "monto": null,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [],
+      "descripcion": "",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=900-36-L126",
+      "encaja_producto": false
+    },
+    {
+      "fuente": "licitacion",
+      "codigo": "1057429-70-LE26",
+      "nombre": "CURSOS DE CAPACITACION Y COFFE BREAK",
+      "estado": "Publicada",
+      "organismo": "SERVICIO NACIONAL DE SALUD HOSPITAL DE CORONEL",
+      "region": "Región del Biobío ",
+      "comuna": "Coronel",
+      "fecha_cierre": "2026-09-14T18:35:00",
+      "fecha_publicacion": "2026-09-04T11:36:00",
+      "monto": null,
+      "moneda": "CLP",
+      "puntaje": 20,
+      "categoria": "servicio",
+      "razones": [
+        "Es un servicio de coffee break o catering"
+      ],
+      "productos": [
+        {
+          "codigo": "80111504",
+          "nombre": "Formación, capacitación y entrenamiento de personal",
+          "descripcion": "CURSO DE MANEJOA VANZADO DE HERIDAS OSTOMIAS Y TERAPIA DE PRESION NEGATIVA.",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        },
+        {
+          "codigo": "80141617",
+          "nombre": "Capacitaciones directas en el concesionario",
+          "descripcion": "CURSO DE GASES CLINICOS.",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        },
+        {
+          "codigo": "80141617",
+          "nombre": "Capacitaciones directas en el concesionario",
+          "descripcion": "CURSO MANEJO DE PACIENTE PSIQUIATRICO ADOLESCENTE E INFANTIL.",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        },
+        {
+          "codigo": "80141617",
+          "nombre": "Capacitaciones directas en el concesionario",
+          "descripcion": "CURSO RCP BASICO Y MANEJO DEA (SEMIPRESENCIAL)",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        },
+        {
+          "codigo": "93131608",
+          "nombre": "Servicios de suministro de alimentos",
+          "descripcion": "SERVICIO DE COFFE BREAK SERVIDO 1200 UD. producto deben ser servidos, previa coordinación con referente técnico.",
+          "cantidad": 1.0,
+          "unidad": "Unidad"
+        }
+      ],
+      "descripcion": "A TARVES DE LOS CURSOS SE TIENE ELÑ OBJETIVO DE ENTREGAR CONOCIMIENTOS TEORICOS Y PRACTICOS A NUESTROS FUNCIONARIOS, ACOMPAÑADOS DE UN COFFE BREAK ENTRE CADA JORNADA DE LAS ACTIVIDADES A DESARROLLAR.",
+      "url": "https://www.mercadopublico.cl/Procurement/Modules/RFB/DetailsAcquisition.aspx?idlicitacion=1057429-70-LE26",
+      "encaja_producto": false
+    }
+  ]
+}
