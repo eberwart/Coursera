@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mapa B2B — Cafeterías para café de especialidad</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root {
+    --ink: #1c1917;
+    --paper: #f7f3ec;
+    --alta: #0f766e;
+    --media: #b45309;
+    --baja: #57534e;
+    --comp: #be123c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  header {
+    padding: 1rem 1.25rem 0.75rem;
+    border-bottom: 1px solid #e7e0d4;
+    background: #fffdf8;
+  }
+  h1 { margin: 0 0 0.25rem; font-size: 1.25rem; letter-spacing: -0.02em; }
+  .sub { margin: 0; color: #57534e; font-size: 0.9rem; max-width: 70ch; }
+  .layout { display: grid; grid-template-columns: 340px 1fr; height: calc(100vh - 88px); }
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; height: auto; }
+    #map { height: 55vh; min-height: 360px; }
+  }
+  aside {
+    overflow: auto;
+    border-right: 1px solid #e7e0d4;
+    background: #fffdf8;
+    padding: 0.75rem;
+  }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+  .filters button {
+    border: 1px solid #d6d3d1;
+    background: #fff;
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.78rem;
+    cursor: pointer;
+  }
+  .filters button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .card {
+    border: 1px solid #e7e0d4;
+    border-radius: 10px;
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 0.55rem;
+    cursor: pointer;
+    background: #fff;
+  }
+  .card:hover { border-color: #a8a29e; }
+  .card h3 { margin: 0 0 0.2rem; font-size: 0.95rem; }
+  .meta { font-size: 0.78rem; color: #57534e; margin: 0.15rem 0; }
+  .badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    color: #fff;
+  }
+  .alta { background: var(--alta); }
+  .media { background: var(--media); }
+  .baja { background: var(--baja); }
+  .competencia { background: var(--comp); }
+  #map { width: 100%; height: 100%; }
+  .legend {
+    position: absolute; z-index: 500; right: 12px; bottom: 20px;
+    background: rgba(255,253,248,0.95); border: 1px solid #e7e0d4;
+    border-radius: 10px; padding: 0.55rem 0.7rem; font-size: 0.75rem;
+  }
+  .legend span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+  .leaflet-popup-content { font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mapa de cafeterías — posibles clientes B2B</h1>
+  <p class="sub">La Reina · Peñalolén · Ñuñoa. Prioridad según probabilidad de comprar café de especialidad tostado (no cadenas centralizadas ni tostadurías propias).</p>
+</header>
+<div class="layout">
+  <aside>
+    <div class="filters">
+      <button class="active" data-f="all">Todas</button>
+      <button data-f="alta">Alta</button>
+      <button data-f="media">Media</button>
+      <button data-f="baja">Baja</button>
+      <button data-f="competencia">Competencia</button>
+      <button data-f="la_reina">La Reina</button>
+      <button data-f="penalolen">Peñalolén</button>
+      <button data-f="nunoa">Ñuñoa</button>
+    </div>
+    <div id="list"></div>
+  </aside>
+  <div style="position:relative">
+    <div id="map"></div>
+    <div class="legend">
+      <div><span style="background:#0f766e"></span>Alta — buen prospecto</div>
+      <div><span style="background:#b45309"></span>Media — validar proveedor</div>
+      <div><span style="background:#57534e"></span>Baja — cadena / difícil</div>
+      <div><span style="background:#be123c"></span>Competencia — tuestan</div>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const cafes = [
+  {"name":"Cobalto Coffee & Colab","address":"Marchant Pereira 3360, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Especialidad + arte; sin tostar propio aparente","lat":-33.4522232,"lon":-70.607158},
+  {"name":"Café del Barrio","address":"Av. Irarrázaval 4130, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Especialidad vegana; ha mencionado interés en proveedor specialty","lat":-33.4554107,"lon":-70.587722},
+  {"name":"Seis Siete Ocho","address":"Av. Irarrázaval 3601 local 4, Ñuñoa","comuna":"nunoa","prioridad":"media","nota":"Especialidad familiar; verificar si tuestan o compran","lat":-33.4556651,"lon":-70.5930087},
+  {"name":"Tolima Coffee","address":"Av. Irarrázaval 1989 local 1, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Especialidad en eje Irarrázaval","lat":-33.4537262,"lon":-70.6103492},
+  {"name":"Patonejo Hamburgo","address":"Hamburgo 1818, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Bollería + café specialty; buen volumen","lat":-33.4380329,"lon":-70.5782011},
+  {"name":"Patonejo Villaseca","address":"Villaseca 439, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Formato takeaway / bollería","lat":-33.4504226,"lon":-70.6035679},
+  {"name":"Casaciencafe","address":"Eliecer Parada 2439, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Café de barrio en ruta specialty","lat":-33.4345788,"lon":-70.582634},
+  {"name":"Café Rayo Negro","address":"Av. Irarrázaval 1309, Ñuñoa","comuna":"nunoa","prioridad":"alta","nota":"Especialidad; zona Irarrázaval poniente","lat":-33.4535635,"lon":-70.6223843},
+  {"name":"Bourbon Coffee Sip","address":"Jaime Guzmán Errázuriz 3399, Ñuñoa","comuna":"nunoa","prioridad":"media","nota":"Especialidad; validar proveedor actual","lat":-33.4474367,"lon":-70.5936065},
+  {"name":"ID Coffee","address":"Caupolicán 521, Barrio Italia, Ñuñoa","comuna":"nunoa","prioridad":"competencia","nota":"Tuesta propio / filtrados de origen","lat":-33.4482791,"lon":-70.6234541},
+  {"name":"Espíritu Natural Coffee Roasters","address":"Av. Irarrázaval 4645, Ñuñoa","comuna":"nunoa","prioridad":"competencia","nota":"Tostaduría + cafetería (competidor local)","lat":-33.4558,"lon":-70.5825},
+  {"name":"Casa Tateti","address":"Av. Echeñique 6705, La Reina","comuna":"la_reina","prioridad":"alta","nota":"Café familiar alto flujo; no tuesta","lat":-33.4444787,"lon":-70.562173},
+  {"name":"Delaní Coffee & Beer","address":"Av. Echeñique 5839 local 1, La Reina","comuna":"la_reina","prioridad":"alta","nota":"Café de barrio; buen prospecto B2B","lat":-33.4455087,"lon":-70.5706304},
+  {"name":"Amasa Bakery","address":"José Zapiola 8500, La Reina","comuna":"la_reina","prioridad":"alta","nota":"Panadería/café; suele comprar grano","lat":-33.4494459,"lon":-70.5535948},
+  {"name":"Tavelli La Reina","address":"Av. Príncipe de Gales 6543, La Reina","comuna":"la_reina","prioridad":"baja","nota":"Cadena; compras probablemente centralizadas","lat":-33.4379162,"lon":-70.5731973},
+  {"name":"Amapola Café","address":"Av. Grecia 8735, Peñalolén","comuna":"penalolen","prioridad":"alta","nota":"Especialidad en Peñalolén","lat":-33.4766898,"lon":-70.5426274},
+  {"name":"Casa Turquesa","address":"Av. Consistorial 2701 local C1, Peñalolén","comuna":"penalolen","prioridad":"media","nota":"Cafetería + tienda natural","lat":-33.4833658,"lon":-70.5477699},
+  {"name":"Thani","address":"Av. Quilín 5305, Peñalolén","comuna":"penalolen","prioridad":"media","nota":"Panadería/pastelería con café","lat":-33.4905312,"lon":-70.5763523}
+];
+
+const colors = { alta:'#0f766e', media:'#b45309', baja:'#57534e', competencia:'#be123c' };
+const map = L.map('map').setView([-33.455, -70.58], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap'
+}).addTo(map);
+
+const markers = {};
+const list = document.getElementById('list');
+let filter = 'all';
+
+function matches(c) {
+  if (filter === 'all') return true;
+  if (['alta','media','baja','competencia'].includes(filter)) return c.prioridad === filter;
+  return c.comuna === filter;
+}
+
+function render() {
+  list.innerHTML = '';
+  Object.values(markers).forEach(m => map.removeLayer(m));
+  const group = [];
+  cafes.filter(matches).forEach((c, i) => {
+    const m = L.circleMarker([c.lat, c.lon], {
+      radius: 9, color: '#fff', weight: 2, fillColor: colors[c.prioridad], fillOpacity: 0.95
+    }).addTo(map).bindPopup(`<strong>${c.name}</strong><br>${c.address}<br><em>${c.nota}</em><br><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.address)}">Abrir en Maps</a>`);
+    markers[c.name] = m;
+    group.push([c.lat, c.lon]);
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `<span class="badge ${c.prioridad}">${c.prioridad}</span>
+      <h3>${c.name}</h3>
+      <p class="meta">${c.address}</p>
+      <p class="meta">${c.nota}</p>`;
+    card.onclick = () => { map.setView([c.lat, c.lon], 16); m.openPopup(); };
+    list.appendChild(card);
+  });
+  if (group.length) map.fitBounds(group, { padding: [40, 40] });
+}
+
+document.querySelectorAll('.filters button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    filter = btn.dataset.f;
+    render();
+  });
+});
+
+render();
+</script>
+</body>
+</html>
