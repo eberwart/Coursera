@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-09-11",
+  "total": 1999999.9449,
+  "needs_rebalance": false,
+  "max_abs_dev_pp": 1.0958e-06,
+  "sum_abs_dev_pp": 2.4772e-06,
+  "weights": [
+    {
+      "id": "SMH",
+      "ticker": "SMH",
+      "shares": 386.9628,
+      "precio": 568.53,
+      "valor": 219999.972,
+      "peso_actual": 0.11,
+      "peso_objetivo": 0.11,
+      "desviacion_pp": -1.0958e-06,
+      "estado": "OK"
+    },
+    {
+      "id": "IPSA",
+      "ticker": "ECH",
+      "shares": 8611.9555,
+      "precio": 39.48,
+      "valor": 339999.9992,
+      "peso_actual": 0.17,
+      "peso_objetivo": 0.17,
+      "desviacion_pp": 4.2834e-07,
+      "estado": "OK"
+    },
+    {
+      "id": "RF",
+      "ticker": "BND",
+      "shares": 3089.0199,
+      "precio": 71.22,
+      "valor": 220000.001,
+      "peso_actual": 0.11,
+      "peso_objetivo": 0.11,
+      "desviacion_pp": 3.5556e-07,
+      "estado": "OK"
+    },
+    {
+      "id": "VEA",
+      "ticker": "VEA",
+      "shares": 3576.833,
+      "precio": 72.69,
+      "valor": 259999.9995,
+      "peso_actual": 0.13,
+      "peso_objetivo": 0.13,
+      "desviacion_pp": 3.3336e-07,
+      "estado": "OK"
+    },
+    {
+      "id": "SPY",
+      "ticker": "SPY",
+      "shares": 1046.7231,
+      "precio": 764.29,
+      "valor": 799999.9751,
+      "peso_actual": 0.4,
+      "peso_objetivo": 0.4,
+      "desviacion_pp": -1.4276e-07,
+      "estado": "OK"
+    },
+    {
+      "id": "ORO",
+      "ticker": "GLD",
+      "shares": 401.2338,
+      "precio": 398.77,
+      "valor": 159999.998,
+      "peso_actual": 0.08,
+      "peso_objetivo": 0.08,
+      "desviacion_pp": 1.2135e-07,
+      "estado": "OK"
+    }
+  ],
+  "trades": []
+}

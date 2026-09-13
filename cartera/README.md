@@ -20,3 +20,7 @@ python3 cartera/optimizar_probabilidad.py
 ## Idea clave
 
 Si el retorno esperado está bajo la meta (+10%), reducir volatilidad **baja** la probabilidad de alcanzarla. El óptimo se mueve sobre el borde del piso de cola, no hacia mínima varianza.
+
+## Monitor diario (R)
+
+Ver [`monitor/README.md`](monitor/README.md): notebook `monitor_cartera.Rmd` + `run_diario.R` para revisar desviaciones, alertar y proponer ajustes.

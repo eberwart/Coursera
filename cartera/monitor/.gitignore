@@ -1,0 +1,5 @@
+# Ignorar salidas generadas del monitor (se regeneran al correr)
+reportes/*.html
+reportes/cron.log
+alertas/alerta_*.md
+# conservar ultima_revision.md y ultimo_snapshot.json como ejemplo opcional

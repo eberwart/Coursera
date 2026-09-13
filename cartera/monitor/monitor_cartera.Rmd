@@ -1,0 +1,191 @@
+---
+title: "Monitor diario de cartera — horizonte 12 meses"
+author: "ERIK"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    df_print: paged
+editor_options:
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, message = FALSE, warning = FALSE,
+  fig.width = 8, fig.height = 4.5
+)
+
+# Directorio del monitor (funciona en RStudio, knitr y línea de comandos)
+MONITOR_DIR <- {
+  if (file.exists("config.yml")) {
+    normalizePath(".")
+  } else if (file.exists("cartera/monitor/config.yml")) {
+    normalizePath("cartera/monitor")
+  } else if (requireNamespace("knitr", quietly = TRUE) &&
+             !is.null(knitr::current_input()) &&
+             nzchar(knitr::current_input())) {
+    normalizePath(dirname(knitr::current_input(dir = TRUE)))
+  } else {
+    normalizePath(".")
+  }
+}
+source(file.path(MONITOR_DIR, "lib_monitor.R"))
+```
+
+# Objetivo
+
+Cartera **óptimo 3 motores** (redondeada) para los próximos 12 meses:
+
+| Activo | Peso |
+|--------|-----:|
+| SPY | 40% |
+| SMH | 11% |
+| VEA | 13% |
+| IPSA (ECH) | 17% |
+| Oro (GLD) | 8% |
+| RF (BND) | 11% |
+| Commodities / cobre | 0% |
+
+**Regla de alerta:** desviación ≥ **5 pp** en un activo, o suma de |desviaciones| ≥ **10 pp**.
+
+Edita `holdings.csv` con tus shares reales. El notebook baja precios de Yahoo Finance, marca desviaciones y propone compras/ventas.
+
+# 1. Configuración y posiciones
+
+```{r config}
+cfg <- load_config(MONITOR_DIR)
+knitr::kable(cfg$activos_df, caption = "Pesos objetivo")
+
+holdings <- load_holdings(cfg)
+knitr::kable(holdings, caption = "Posiciones actuales (holdings.csv)")
+```
+
+# 2. Snapshot del día
+
+```{r snapshot}
+out <- run_monitor(cfg)
+snap <- out$snap
+trades <- out$trades
+
+cat(sprintf(
+  "Fecha precios: %s\nValor cartera: %s\nMáx |Δ|: %.2f pp\nSuma |Δ|: %.2f pp\nRebalancear: %s\n",
+  snap$as_of,
+  scales::dollar(snap$total),
+  100 * snap$max_abs_dev,
+  100 * snap$sum_abs_dev,
+  ifelse(snap$needs_rebalance, "SÍ", "no")
+))
+```
+
+```{r tabla}
+snap$tabla %>%
+  transmute(
+    Activo = id,
+    Ticker = ticker,
+    Shares = round(shares, 2),
+    Precio = round(precio, 2),
+    Valor = scales::dollar(valor),
+    `Peso %` = sprintf("%.1f", 100 * peso_actual),
+    `Objetivo %` = sprintf("%.1f", 100 * peso_objetivo),
+    `Δ pp` = sprintf("%+.2f", desviacion_pp),
+    Estado = estado
+  ) %>%
+  knitr::kable()
+```
+
+# 3. Gráficos
+
+```{r plots}
+plot_pesos(snap)
+plot_desviaciones(snap)
+```
+
+# 4. Ajustes propuestos
+
+Si hay ALERTA, estas órdenes vuelven al objetivo (las ventas financian las compras).
+
+```{r trades}
+if (nrow(trades) == 0) {
+  cat("Sin operaciones relevantes (≥ $100).\n")
+} else {
+  trades %>%
+    transmute(
+      Acción = accion,
+      Ticker = ticker,
+      Shares = shares_orden,
+      USD = scales::dollar(usd_orden),
+      `Δ pp` = sprintf("%+.2f", desviacion_pp),
+      Estado = estado
+    ) %>%
+    knitr::kable()
+}
+```
+
+```{r alerta_box, results='asis'}
+if (isTRUE(snap$needs_rebalance)) {
+  cat("\n<div style='padding:12px;border-left:4px solid #e76f51;background:#fdecea;'>")
+  cat("<b>ALERTA:</b> la cartera se salió de banda. Revisa las órdenes y actualiza <code>holdings.csv</code> tras ejecutar.")
+  cat("</div>\n")
+} else if (snap$n_aviso > 0) {
+  cat("\n<div style='padding:12px;border-left:4px solid #e9c46a;background:#fff8e7;'>")
+  cat("<b>AVISO:</b> hay desviaciones menores (3–5 pp). No es obligatorio rebalancear.")
+  cat("</div>\n")
+} else {
+  cat("\n<div style='padding:12px;border-left:4px solid #2a9d8f;background:#e8f6f3;'>")
+  cat("<b>OK:</b> dentro de bandas. No hay que hacer nada hoy.")
+  cat("</div>\n")
+}
+```
+
+# 5. Historial
+
+```{r historial}
+hist_path <- file.path(MONITOR_DIR, "historial_desviaciones.csv")
+if (file.exists(hist_path)) {
+  hist <- read.csv(hist_path, stringsAsFactors = FALSE)
+  knitr::kable(utils::tail(hist, 15), caption = "Últimas revisiones")
+  if (nrow(hist) >= 2) {
+    hist$fecha <- as.Date(hist$fecha)
+    ggplot(hist, aes(x = fecha, y = max_abs_dev_pp)) +
+      geom_line(color = "#264653") +
+      geom_point(aes(color = as.logical(needs_rebalance)), size = 2) +
+      geom_hline(yintercept = 100 * cfg$umbral_desviacion, linetype = "dashed") +
+      scale_color_manual(values = c(`TRUE` = "#e76f51", `FALSE` = "#2a9d8f")) +
+      labs(
+        title = "Evolución de la máxima desviación (pp)",
+        x = NULL, y = "pp", color = "¿Rebalancear?"
+      ) +
+      theme_minimal()
+  }
+} else {
+  cat("Aún no hay historial.\n")
+}
+```
+
+# 6. Automatización diaria
+
+En terminal (o cron):
+
+```bash
+Rscript cartera/monitor/run_diario.R
+```
+
+Notificaciones opcionales:
+
+```bash
+export ALERT_WEBHOOK_URL="https://hooks.slack.com/services/..."  # Slack o Discord
+export ALERT_EMAIL="tu@correo.com"  # requiere `mail` en el sistema
+```
+
+También puedes poner `webhook_url` / `email` en `config.yml`.
+
+Ejemplo cron (lun–vie 18:30 Chile):
+
+```bash
+30 18 * * 1-5 /ruta/al/repo/cartera/monitor/cron_diario.sh
+```
+
+Después de operar en el broker, actualiza los shares en `holdings.csv` y vuelve a correr.
