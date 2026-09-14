@@ -93,33 +93,47 @@ Marca con verdad. Si no has ganado Impulso Chileno ni Sercotec/Corfo/Fosis/etc.,
 
 ---
 
-## Bloque 4 — Mercado (aquí se juega el 50% del negocio)
+## Bloque 4 — Mercado (máximo 1.000 caracteres cada una)
+
+Pegar tal cual. Conteos con espacios: clientes 801 · preferencia 750 · competidores 899.
 
 ### 30. ¿Quiénes son tus clientes o a qué segmentos atiende o busca atender tu negocio?
 
-Tres segmentos, en este orden de foco:
+Atendemos dos segmentos en todo Chile.
 
-1. **Hogares en Chile** que quieren café de especialidad tostado local, con despacho a regiones, compra por web o WhatsApp.
-2. **Canal HORECA actual:** cafeterías, restaurantes, hoteles boutique y oficinas que ya compran o pueden comprar grano CRL (mayorista).
-3. **Canal que quiero abrir con este premio:** el mismo HORECA, pero clientes que **no tienen barra espresso profesional** y no pueden (o no quieren) inmovilizar ~$5.000.000 en máquina y molino. A ellos les ofrezco arriendo + asesoría + café.
+1) Cafeterías independientes y barras de café (y locales HORECA afines) que compran grano al por mayor. Son dueños o baristas, en general de 25 a 55 años, en Santiago y regiones. Les interesa gastronomía, hospitalidad y una taza consistente para su cliente. Buscan un proveedor formal, que facture y que no desaparezca después de la primera entrega.
 
-No busco mass market de café industrial ni vending automático. Busco puntos de 80 a 150 tazas/día que quieran especialidad bien extraída.
+2) Cliente final por e-commerce: personas de 25 a 45 años, sobre todo urbanas, que toman café a diario en casa u oficina, compran por web o WhatsApp y valoran origen, frescura y que les expliquen cómo moler y preparar. Les interesa cocina, hábitos de bienestar y un café rico sin precio de lujo.
+
+Queremos profundizar ambos: más cafeterías con compra recurrente y más hogares que recompren en la tienda online.
 
 ### 31. ¿Por qué tus clientes te prefieren sobre tu competencia?
 
-Porque no separo el grano de la taza. Tueste perfiles a la medida, orígenes con estándar SCA, y acompañamiento de preparación (molienda, receta, limpieza de barra). El cliente no compra solo un saco: compra que la bebida salga consistente.
+Nos eligen por cuatro atributos que van juntos, no por uno solo.
 
-En el canal nuevo, el precio de arriendo ($150.000 + IVA al mes) está **bajo** el rango publicado en Chile para espresso profesional (~$280.000 a $600.000, o comodatos atados a un mínimo alto de insumo). Eso, más que “café barato”, es acceso a equipo de verdad sin capex.
+1) Calidad de especialidad: granos seleccionados y tueste en Chile, con perfiles claros de sabor, cuerpo e intensidad. No es café genérico de supermercado.
 
-Además opero formal (EIRL, factura, primera categoría), con marca propia y venta a todo Chile.
+2) Precio competitivo: especialidad accesible para la cafetería y para el hogar, sin inflar el ticket.
+
+3) Asesoría superior: ayudamos a cada cliente a sacar lo mejor de su café. En cafeterías, a dejar la barra consistente (molienda, receta, método). En e-commerce, a preparar bien en casa y a elegir el origen según su paladar.
+
+4) Acompañamiento después de la venta: no despachamos y desaparecemos. Seguimos, resolvemos dudas y ajustamos.
+
+Esa combinación —calidad, precio, asesoría y seguimiento— es lo que hace que vuelvan.
 
 ### 32. ¿Quiénes son tus competidores?
 
-En **café de especialidad / tostaduría:** otras tostadurías y marcas que venden grano a hogar y a cafeterías (distribuidores y tostadores locales de especialidad, y el café comercial de supermercado en el tramo de precio bajo).
+Competimos con tostadurías de café de especialidad que venden a cafeterías y al cliente final por internet, con despacho a Chile.
 
-En **equipo y barra para HORECA:** operadores de arriendo o comodato de espresso e insumo (referencias de mercado: La Finca, Nolichile, Corporate Coffee y similares). Compiten por el mismo cliente que quiere servir espresso sin comprar la máquina.
+1) Café Altura: marca conocida, locales y venta de grano; fuerte en precio-accesibilidad y presencia en Santiago. Nos cruzamos en cafeterías y en compra online.
 
-No compito con cadenas de café industrial ni con venta de máquinas nuevas como único giro: mi palanca es tostador + equipo + receta en un solo proveedor chico.
+2) Bioma Coffee Roasters: e-commerce de especialidad, tueste frecuente y envío nacional. Compite sobre todo por el cliente final que compra por web.
+
+3) Oromo Coffee Roasters: grano de especialidad online, lotes pequeños y despacho a regiones. Mismo canal e-commerce y mismo tipo de comprador.
+
+4) Puelo Coffee Roasters: tostaduría de especialidad que también apunta a hogares y a canal profesional.
+
+En e-commerce también aparece el café comercial (Nescafé, Café Haití) cuando la persona aún no da el salto a especialidad. El rival directo, mismo producto y mismos clientes, son las tostadurías nombradas.
 
 ---
 
