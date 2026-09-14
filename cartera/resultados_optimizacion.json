@@ -1,0 +1,181 @@
+{
+  "assumptions": {
+    "W0": 2000000.0,
+    "target": 2200000.0,
+    "forward_mu": {
+      "SPY": 0.0805,
+      "SMH": 0.0955,
+      "VEA": 0.0705,
+      "IPSA": 0.0905,
+      "ORO": 0.0405,
+      "COMM": 0.0455,
+      "RF": 0.0385
+    },
+    "port3_vol": 0.133,
+    "r5_floor_return": -0.1499,
+    "r5_floor_wealth": 1700280.0,
+    "chile_proxy": "ECH",
+    "comm_cap": 0.05,
+    "sample": "2012-02-29 → 2026-09-30",
+    "objective": "max P(W>=2.2M) s.t. VaR5% wealth >= cartera 3, COMM<=5%",
+    "note": "Con E[r]<10%, minimizar vol reduce P(meta). El óptimo opera en el borde del piso de cola."
+  },
+  "portfolios": [
+    {
+      "name": "base_instagram_tech",
+      "weights": {
+        "SPY": 0.4,
+        "SMH": 0.25,
+        "VEA": 0.05,
+        "IPSA": 0.1,
+        "ORO": 0.08,
+        "COMM": 0.05,
+        "RF": 0.07
+      },
+      "expected_return": 0.0768,
+      "volatility": 0.1503,
+      "p_finish_above_2m": 0.7254,
+      "p_finish_above_2_2m": 0.4309,
+      "p_finish_above_2_2m_normal": 0.4387,
+      "worst_5pct_wealth": 1725424.0,
+      "worst_5pct_wealth_normal": 1659144.0,
+      "median_wealth": 2155005.0,
+      "expected_wealth": 2154182.0,
+      "sharpe_approx": 0.511
+    },
+    {
+      "name": "cartera_3",
+      "weights": {
+        "SPY": 0.225,
+        "SMH": 0.1,
+        "VEA": 0.05,
+        "IPSA": 0.25,
+        "ORO": 0.175,
+        "COMM": 0.05,
+        "RF": 0.15
+      },
+      "expected_return": 0.0689,
+      "volatility": 0.133,
+      "p_finish_above_2m": 0.7278,
+      "p_finish_above_2_2m": 0.395,
+      "p_finish_above_2_2m_normal": 0.4076,
+      "worst_5pct_wealth": 1760376.0,
+      "worst_5pct_wealth_normal": 1700280.0,
+      "median_wealth": 2139185.0,
+      "expected_wealth": 2138558.0,
+      "sharpe_approx": 0.518
+    },
+    {
+      "name": "opt_max_P_meta_con_piso_p5",
+      "weights": {
+        "SPY": 0.6902,
+        "SMH": 0.0301,
+        "VEA": 0.0,
+        "IPSA": 0.1456,
+        "ORO": 0.0,
+        "COMM": 0.0,
+        "RF": 0.1341
+      },
+      "expected_return": 0.0767,
+      "volatility": 0.1378,
+      "p_finish_above_2m": 0.7416,
+      "p_finish_above_2_2m": 0.4236,
+      "p_finish_above_2_2m_normal": 0.4329,
+      "worst_5pct_wealth": 1762375.0,
+      "worst_5pct_wealth_normal": 1700280.0,
+      "median_wealth": 2154489.0,
+      "expected_wealth": 2153736.0,
+      "sharpe_approx": 0.557
+    },
+    {
+      "name": "opt_espiritu_3_motores",
+      "weights": {
+        "SPY": 0.4,
+        "SMH": 0.1069,
+        "VEA": 0.1263,
+        "IPSA": 0.1673,
+        "ORO": 0.08,
+        "COMM": 0.0,
+        "RF": 0.1195
+      },
+      "expected_return": 0.0743,
+      "volatility": 0.1362,
+      "p_finish_above_2m": 0.7381,
+      "p_finish_above_2_2m": 0.4111,
+      "p_finish_above_2_2m_normal": 0.4251,
+      "worst_5pct_wealth": 1762210.0,
+      "worst_5pct_wealth_normal": 1700280.0,
+      "median_wealth": 2147841.0,
+      "expected_wealth": 2148271.0,
+      "sharpe_approx": 0.545
+    },
+    {
+      "name": "opt_piso_p5_mas_40k",
+      "weights": {
+        "SPY": 0.6071,
+        "SMH": 0.0205,
+        "VEA": 0.0,
+        "IPSA": 0.1253,
+        "ORO": 0.0,
+        "COMM": 0.0,
+        "RF": 0.2471
+      },
+      "expected_return": 0.0716,
+      "volatility": 0.1225,
+      "p_finish_above_2m": 0.7529,
+      "p_finish_above_2_2m": 0.3952,
+      "p_finish_above_2_2m_normal": 0.4085,
+      "worst_5pct_wealth": 1795965.0,
+      "worst_5pct_wealth_normal": 1740280.0,
+      "median_wealth": 2143352.0,
+      "expected_wealth": 2143621.0,
+      "sharpe_approx": 0.585
+    },
+    {
+      "name": "opt_sin_piso_p5",
+      "weights": {
+        "SPY": 0.0,
+        "SMH": 1.0,
+        "VEA": 0.0,
+        "IPSA": 0.0,
+        "ORO": 0.0,
+        "COMM": 0.0,
+        "RF": 0.0
+      },
+      "expected_return": 0.0955,
+      "volatility": 0.2846,
+      "p_finish_above_2m": 0.6508,
+      "p_finish_above_2_2m": 0.4923,
+      "p_finish_above_2_2m_normal": 0.4936,
+      "worst_5pct_wealth": 1382562.0,
+      "worst_5pct_wealth_normal": 1254560.0,
+      "median_wealth": 2191051.0,
+      "expected_wealth": 2191275.0,
+      "sharpe_approx": 0.335
+    }
+  ],
+  "engines": {
+    "opt_libre": {
+      "EEUU": 0.7202469677928796,
+      "SPY": 0.6901526869483136,
+      "SMH": 0.03009428084456597,
+      "Chile": 0.14563432369284238,
+      "Diversificadores": 0.13411870851427785,
+      "ORO": 0.0,
+      "RF": 0.1341187085142776,
+      "COMM": 2.362991524811619e-16,
+      "VEA": 3.1232445926596586e-16
+    },
+    "opt_espiritu": {
+      "EEUU": 0.5068635167747744,
+      "SPY": 0.3999999999999999,
+      "SMH": 0.10686351677477451,
+      "Chile": 0.1673339413966304,
+      "Diversificadores": 0.19949427507287,
+      "ORO": 0.08000000000000007,
+      "RF": 0.1194942750728699,
+      "COMM": 0.0,
+      "VEA": 0.12630826675572512
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# Cartera objetivo — horizonte 12 meses (óptimo 3 motores, redondeado)
+capital_inicial: 2000000
+moneda: USD
+fecha_inicio_objetivo: "2026-09-13"
+
+# Umbrales (fracción de cartera). 0.05 = 5 puntos porcentuales
+umbral_desviacion: 0.05
+umbral_desviacion_total: 0.10
+umbral_aviso: 0.03
+
+activos:
+  - id: SPY
+    ticker: SPY
+    nombre: "S&P 500 (SPY)"
+    peso_objetivo: 0.40
+  - id: SMH
+    ticker: SMH
+    nombre: "Semiconductores (SMH)"
+    peso_objetivo: 0.11
+  - id: VEA
+    ticker: VEA
+    nombre: "Desarrollados ex-US (VEA)"
+    peso_objetivo: 0.13
+  - id: IPSA
+    ticker: ECH
+    nombre: "Chile / IPSA proxy (ECH)"
+    peso_objetivo: 0.17
+  - id: ORO
+    ticker: GLD
+    nombre: "Oro (GLD)"
+    peso_objetivo: 0.08
+  - id: RF
+    ticker: BND
+    nombre: "Renta fija (BND)"
+    peso_objetivo: 0.11
+
+# Cobre/commodities: 0% por decisión táctica
+commodities_objetivo: 0.0
+commodities_cap: 0.05
+
+alertas:
+  escribir_archivo: true
+  # Opcional; también: export ALERT_WEBHOOK_URL=...
+  webhook_url: ""
+  # Opcional; también: export ALERT_EMAIL=tu@correo.com
+  email: ""
